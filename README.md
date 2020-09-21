@@ -8,7 +8,7 @@
 - 2020.09.16 - 2020.09.00
 
 ### degree of participation
-- 100% (Redesign, Publishing, etc)
+- 100% (esign, Publishing, etc)
 
 <br>
 copyright (c) 2020 Ji Hye LEE
