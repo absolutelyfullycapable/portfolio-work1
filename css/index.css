@@ -7,7 +7,8 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
 .container { width:100%; position:relative; }
 
 /*** header ***/
-.container header { padding:0 22px; box-sizing:border-box; width:100%; height:70px; display:flex; justify-content:space-between; align-items:center; position:fixed; top:0; right:0; z-index:999; background-color:rgba(255, 255, 255, 0.5); }
+.container header { width:100%; height:70px; padding:0 22px; box-sizing:border-box; display:flex; justify-content:space-between; align-items:center; position:fixed; top:0; right:0; z-index:999; background-color:rgba(255, 255, 255, 0.5); }
+
     /** menu icon **/
     .container header .wrapper-menu { width:30px; height:30px; display:flex; flex-direction:column; justify-content:space-between; cursor:pointer; transition:transform 330ms ease-out; }
     .container header .wrapper-menu.open { transform:rotate(-45deg); }
@@ -27,8 +28,19 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
         .container header .search a { display:block; width:100%; height:100%;  background:url(../images/search.svg) no-repeat; background-size:cover; }
 
 
+/*** search ***/
+.container #search_box { width:100%; height:230px; position:fixed; top:-230px; z-index:999; background-color:#fcfcfc; padding:70px 25px 50px; box-sizing:border-box; }
+    .container #search_box svg:first-of-type { width:20px; position:absolute; top:25px; right:25px; color:#544737; opacity:0.5; }
+    .container #search_box h1 { margin:0; text-transform:capitalize; font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-weight:normal; margin-bottom:25px; color:#544737; }
+    .container #search_box .box { width:100%; display:flex; }
+        .container #search_box .box input { width:80%; outline:none; font-size:18px; border:none; border-bottom:1px solid #544737; background-color:transparent; padding:10px 5px; box-sizing:border-box; color:#544737; font-weight:300; }
+        .container #search_box .box .txt { width:20%; border-bottom:1px solid #544737; padding:10px 5px; box-sizing:border-box; display:flex; justify-content:center; align-items:center; }
+            .container #search_box .box .txt button { outline:none; border:none; background-color:transparent; color:#89866d; }
+
+
 /*** mobile navigation ***/
-.container nav { padding:0 22px; box-sizing:border-box; width:100%; height:100vh; background-color:#fcf9f5; color:#3a3123; position:fixed; top:0; left:-100%; }
+.container nav { padding:0 22px; box-sizing:border-box; width:100%; height:100vh; background-color:#fcf9f5; color:#3a3123; position:fixed; top:0; left:-100%; z-index:999; }
+.container nav.show { left:0; }
     .container nav ul { margin:0; padding:0; list-style:none; }
 
     .container nav .gnb { padding-top:120px; box-sizing:border-box; } 
@@ -42,9 +54,10 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
         .container nav .gnb > li:nth-child(5) { margin-top:90px; }
         .container nav .gnb > li:nth-child(6) { margin:30px 0; }
 
+
 /*** main contents ***/
     /** banner **/
-    .container #main #banner { width:100%; height:100vh; position:relative; }
+    .container #main #banner { width:100%; height:100vh; position:relative; overflow:hidden; }
         .container #main #banner .banner_box { width:300%; height:100%; display:flex; }
             .container #main #banner .banner_box div h1, .container #main #banner .banner_box div h2 { margin:0; font-weight:normal; text-align:center; }
             .container #main #banner .banner_box div h1 { font-size:35px; font-weight:400; letter-spacing:2px; position:relative; top:30px; }
@@ -66,14 +79,20 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
             .container #main #banner .banner_box .banner3 p { padding:0 55px; box-sizing:border-box; line-height:1.5; }
 
         /** scroll notification **/
-        .container #main #banner img { width:18px; position:absolute; bottom:35px; left:50%; transform:translateX(-50%); }
+        .container #main #banner img { width:18px; position:absolute; bottom:35px; left:50%; animation:nudgeMouse 2.4s cubic-bezier(0.250,0.460,0.450,0.940) infinite; }
+
+        @keyframes nudgeMouse {
+            0% { transform:translateX(-50%) translateY(0); }
+            45% { transform:translateX(-50%) translateY(16px); }
+            65%, 100% { transform:translateX(-50%) translateY(0); }
+        }
 
     /** best seller **/
-    .container #main #best_seller { width:100%; background-color:#f2f1e4; padding:85px 0; box-sizing:border-box; position:relative; }
+    .container #main #best_seller { width:100%; background-color:#f2f1e4; padding:85px 0; box-sizing:border-box; position:relative; overflow:hidden; }
         .container #main #best_seller h1 { margin:0; font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-weight:normal; text-align:center; }
 
         /** product info **/
-        .container #main #best_seller .products { padding:40px 0 55px; box-sizing:border-box; width:300%; display:flex; } 
+        .container #main #best_seller .products { padding:40px 0 55px; box-sizing:border-box; width:300%; display:flex; overflow:hidden; } 
         .container #main #best_seller .products h3 { font-weight:normal; text-align:center; color:#222; line-height:1.4; margin-top:0; } 
         .container #main #best_seller .products p { text-align:center; color:#686868; line-height:1.6; } 
 
@@ -96,11 +115,12 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
         /** view more **/
         .container #main #best_seller a { text-decoration:none; color:#89866d; display:flex; justify-content:center; align-items:center; width:215px; height:50px; margin:0 auto; border:1px solid #89866d; }
 
-    /*** about ***/
-    .container #main #about { width:100%; background-color:#fcf9f5; padding:110px 0; box-sizing:border-box; position:relative; }
-        .container #main #about > div > p:first-of-type { font-family:'AntroVectra', 'Apple SD Gothic Neo', serif; font-size:70px; color:#89866d60; margin:0; }
-        .container #main #about > div > h1 { margin:0; font-weight:normal; font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; color:#544737; font-size:40px; }
-        .container #main #about > div > p:last-of-type { color:#89866d; line-height:1.7; padding:65px 0; letter-spacing:0; font-size:17px; }
+
+/*** about ***/
+.container #main #about { width:100%; background-color:#fcf9f5; padding:110px 0; box-sizing:border-box; position:relative; overflow:hidden; }
+    .container #main #about > div > p:first-of-type { font-family:'AntroVectra', 'Apple SD Gothic Neo', serif; font-size:70px; color:#89866d60; margin:0; }
+    .container #main #about > div > h1 { margin:0; font-weight:normal; font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; color:#544737; font-size:40px; }
+    .container #main #about > div > p:last-of-type { color:#89866d; line-height:1.7; padding:65px 0; letter-spacing:0; font-size:17px; }
 
         /* about 1 */
         .container #main #about .about_1 { width:100%; position:relative; }
@@ -128,15 +148,16 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
         .container #main #about .circle1 { width:428px; height:428px; border:1px solid #cecbab50; border-radius:50%; position:absolute; top:360px; right:-100px; z-index:1; }
         .container #main #about .circle2 { width:290px; height:290px; border:1px solid #cecbab50; border-radius:50%; position:absolute; top:1000px; left:-100px; z-index:1; }
         .container #main #about .circle3 { width:395px; height:395px; border:1px solid #cecbab50; border-radius:50%; position:absolute; bottom:-170px; right:-170px; z-index:1; }
+       
         
-    /*** new arrivals ***/
-    .container #main #new_arrivals { width:100%; background-color:#f2f1e4; padding:85px 0; box-sizing:border-box; position:relative; z-index:9; }
-        .container #main #new_arrivals h1 { margin:0; font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-weight:normal; text-align:center; }
+/*** new arrivals ***/
+.container #main #new_arrivals { width:100%; background-color:#f2f1e4; padding:85px 0; box-sizing:border-box; position:relative; z-index:9; overflow:hidden; }
+    .container #main #new_arrivals h1 { margin:0; font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-weight:normal; text-align:center; }
 
-        /** product info **/
-        .container #main #new_arrivals .products { padding:40px 0 55px; box-sizing:border-box; width:300%; display:flex; } 
-        .container #main #new_arrivals .products h3 { font-weight:normal; text-align:center; color:#222; line-height:1.4; margin-top:0; } 
-        .container #main #new_arrivals .products p { text-align:center; color:#686868; line-height:1.6; } 
+    /** product info **/
+    .container #main #new_arrivals .products { padding:40px 0 55px; box-sizing:border-box; width:300%; display:flex; } 
+    .container #main #new_arrivals .products h3 { font-weight:normal; text-align:center; color:#222; line-height:1.4; margin-top:0; } 
+    .container #main #new_arrivals .products p { text-align:center; color:#686868; line-height:1.6; } 
 
             /* product 1 */
             .container #main #new_arrivals .products .product1 { width:33.333333%; }
@@ -150,30 +171,33 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
             .container #main #new_arrivals .products .product3 { width:33.333333%; }
             .container #main #new_arrivals .products .product3 .img { width:300px; height:300px; margin:0 auto; background:url(../images/new3.png) no-repeat 50% 50%; background-size:140px; }
 
-        /** prev, next btn **/
-        .container #main #new_arrivals .btn { width:100%; padding:0 25px; box-sizing:border-box; display:flex; justify-content:space-between; position:absolute; top:40%; }
-        .container #main #new_arrivals .btn img { width:20px; }
+     /** prev, next btn **/
+    .container #main #new_arrivals .btn { width:100%; padding:0 25px; box-sizing:border-box; display:flex; justify-content:space-between; position:absolute; top:40%; }
+    .container #main #new_arrivals .btn img { width:20px; }
 
-        .container #main #new_arrivals a { text-decoration:none; color:#89866d; display:flex; justify-content:center; align-items:center; width:215px; height:50px; margin:0 auto; border:1px solid #89866d; }
-        
-    /*** sub banner ***/
-    .container #main #sub_banner { width:100%; height:385px; background:url(../images/subBanner.jpg) no-repeat 60% 50% fixed; background-size:1600px; position:relative; }
-        .container #main #sub_banner .box { display:block; width:100%; background-color:rgba(252, 247, 240, 0.8); padding:35px 40px; box-sizing:border-box; position:absolute; bottom:30px;  text-decoration:none; }
-        .container #main #sub_banner .box h1 { margin:0; font-weight:normal; text-align:center; color:#4a280d; font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; }
-        .container #main #sub_banner .box p { color:#4c4935; margin:20px 0 0; text-align:center; letter-spacing:0; }
+    .container #main #new_arrivals a { text-decoration:none; color:#89866d; display:flex; justify-content:center; align-items:center; width:215px; height:50px; margin:0 auto; border:1px solid #89866d; }
+     
+    
+/*** sub banner ***/
+.container #main #sub_banner { width:100%; height:385px; background:url(../images/subBanner.jpg) no-repeat 60% 50% fixed; background-size:1600px; position:relative; }
+    .container #main #sub_banner .box { display:block; width:100%; background-color:rgba(252, 247, 240, 0.8); padding:35px 40px; box-sizing:border-box; position:absolute; bottom:30px;  text-decoration:none; }
+    .container #main #sub_banner .box h1 { margin:0; font-weight:normal; text-align:center; color:#4a280d; font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; }
+    .container #main #sub_banner .box p { color:#4c4935; margin:20px 0 0; text-align:center; letter-spacing:0; }
 
-    /*** more contents ***/
-    .container #main #sub_contents { background-color:#fcf9f5; padding:108px 0; }
-        .container #main #sub_contents > a { display:block; text-decoration:none; padding:34.5px 30px; box-sizing:border-box; box-shadow:0 0 16px rgba(0, 0, 0, 0.05); }
-        .container #main #sub_contents > a h3 { font-weight:normal; margin:0; color:#222; font-size:17px; line-height:1.5; }
-        .container #main #sub_contents > a p { margin:0; color:#4c4c4c; font-size:15px; margin-top:17px; line-height:1.5; }
-        .container #main #sub_contents > a .hidden, .container #main #sub_contents .btn { display:none; }
+
+/*** more contents ***/
+.container #main #sub_contents { background-color:#fcf9f5; padding:108px 0; }
+    .container #main #sub_contents > a { display:block; text-decoration:none; padding:34.5px 30px; box-sizing:border-box; box-shadow:0 0 16px rgba(0, 0, 0, 0.05); }
+    .container #main #sub_contents > a h3 { font-weight:normal; margin:0; color:#222; font-size:17px; line-height:1.5; }
+    .container #main #sub_contents > a p { margin:0; color:#4c4c4c; font-size:15px; margin-top:17px; line-height:1.5; }
+    .container #main #sub_contents > a .hidden, .container #main #sub_contents .btn { display:none; }
 
         /** content 1 **/
         .container #main #sub_contents .content1 { width:315px; height:180px; margin:0 auto; background:url(../images/btn1.jpg) no-repeat; background-size:400px; }
         
         /** content 2 **/
         .container #main #sub_contents .content2 { width:315px; height:180px; margin:40px auto 0; background:url(../images/btn2.jpg) no-repeat; background-size:400px; }
+
 
 /*** footer ***/
 .container footer { width:100%; background-color:#50512d; padding:40px 28px; box-sizing:border-box; font-size:14px; }
