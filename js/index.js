@@ -20,6 +20,26 @@ $(function() {
         }
     })
 
+    // 검색 아이콘 클릭 시 검색창 보임
+    $('.search').on('click', function() {
+        $('#search_box').animate({top:0}, 1000, 'easeOutCubic');
+    });
+
+    // 검색창 내 X 버튼 클릭 시 검색창 사라짐
+    $('#search_box svg').on('click', function() {
+        $('#search_box').animate({top:-230}, 1000, 'easeOutCubic')
+    });
+
+    // 스크롤 시 숨어 있던 #scroll_btn 보임
+    $(window).scroll(function() {
+        var scroll = $(this).scrollTop();
+        if(scroll >= 100) {
+            $('#scroll_btn').stop().animate({bottom: 15}, 500);
+        } else {
+            $('#scroll_btn').stop().animate({bottom: -45}, 500);
+        }
+    });
+
     // #scroll_btn 클릭 시 화면 제일 위로 가기
     $('#scroll_btn').on('click', function() {
         $('html, body').animate({scrollTop:0}, 1000);
