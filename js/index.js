@@ -30,13 +30,23 @@ $(function() {
         $('#search_box').animate({top:-230}, 1000, 'easeOutCubic')
     });
 
-    // 스크롤 시 숨어 있던 #scroll_btn 보임
-    $(window).scroll(function() {
+    // 스크롤 시 #PC_header 애니메이션
+    $(window).on('scroll', function() {
         var scroll = $(this).scrollTop();
         if(scroll >= 100) {
-            $('#scroll_btn').stop().animate({bottom: 15}, 500);
+            $('.container #PC_header').addClass('up');
         } else {
-            $('#scroll_btn').stop().animate({bottom: -45}, 500);
+            $('.container #PC_header').removeClass('up');
+        }
+    });
+
+    // 스크롤 시 숨어 있던 #scroll_btn 보임
+    $(window).scroll(function() {
+        var scrollT = $(this).scrollTop();
+        if(scrollT >= 100) {
+            $('#scroll_btn').stop().animate({bottom: 25}, 500);
+        } else {
+            $('#scroll_btn').stop().animate({bottom: -100}, 500);
         }
     });
 
@@ -44,4 +54,11 @@ $(function() {
     $('#scroll_btn').on('click', function() {
         $('html, body').animate({scrollTop:0}, 1000);
    });
+
+    // best seller 영역 이미지 호버 시 상품 상세 페이지로 이동 나타내는 아이콘 나타남
+    $('#best_seller .products > div').hover(function() {
+            $(this).addClass('link');
+    }, function() {
+            $(this).removeClass('link');
+    })
 });
