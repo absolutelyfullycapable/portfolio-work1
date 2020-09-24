@@ -417,13 +417,14 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
 
     /*** more contents ***/
     .container #main #sub_contents { justify-content:center; padding:200px 0; }
-        .container #main #sub_contents a { width:670px; height:380px; }
-            .container #main #sub_contents a .txt h3 { font-size:1.4em; }
-        .container #main #sub_contents a .txt p { font-size:1.1em; }
-        .container #main #sub_contents a .txt .btn { width:182px; margin-top:45px; padding:13px 0; display:block; text-decoration:none; text-align:center; color:#89866d; border:1px solid #89866d; }
+        .container #main #sub_contents a { width:670px; height:380px; padding:50px; }
+            .container #main #sub_contents a .txt h3 { font-size:1.4em; padding-right:5%; }
+        .container #main #sub_contents a .txt p { font-size:1.1em; margin-top:20px; }
+        .container #main #sub_contents a .txt .btn { width:182px; margin-top:45px; padding:13px 0; display:block; text-decoration:none; text-align:center; color:#89866d; border:1px solid #89866d; transition:0.2s; }
+        .container #main #sub_contents a .txt .btn:hover { background-color:#89866d; color:#fff; }
 
-        .container #main #sub_contents .content1 { margin-right:45px; background-size:cover; }
-        .container #main #sub_contents .content2 { margin-left:45px; background-size:cover; }
+        .container #main #sub_contents .content1 { margin-right:45px; background-size:cover; display:flex; align-items:center; }
+        .container #main #sub_contents .content2 { margin-left:45px; background-size:cover; display:flex; align-items:center; }
 
     /*** scroll top ***/
     .container #scroll_btn { width:55px; height:55px; bottom:-60px; right:30px; }
