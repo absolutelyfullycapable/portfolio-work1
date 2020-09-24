@@ -32,11 +32,13 @@
         <!-- font-family: 'Kumbh Sans', sans-serif; font-family: 'Noto Sans KR', sans-serif; -->
         <link rel="stylesheet" href="css/font.css">
         <!-- font-family:'AntroVectra'; font-family:'TamoroScriptPersonalUseOnly'; font-family:'ZapfHumanistRoman'; -->
+        <link rel="stylesheet" href="common/swiper-bundle.min.css">
         <link rel="stylesheet" href="css/index.css">
 
         <!-- script 연결 -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.js"></script>
+        <script src="common/swiper-bundle.min.js"></script>
         <script src="js/index.js"></script>
     </head>
 
@@ -104,23 +106,23 @@
             </nav>
 
             <!-- banner -->
-            <div id="banner">
-                <div class="banner_box">
-                    <div class="banner1">
+            <div id="banner" class="swiper-container">
+                <div class="banner_box swiper-wrapper">
+                    <div class="banner1 swiper-slide">
                         <div class="txt">
                             <h2>평범함의 특별함</h2>
                             <h3>speciality of ordinary</h3>
                             <p>디 오디너리는 진정성과 최고의 기술을 이용하여 만들어진 임상 스킨 케어 브랜드입니다.</p>
                         </div>
                     </div>
-                    <div class="banner2">
+                    <div class="banner2 swiper-slide">
                         <div class="txt">
                             <h2>나를 위한 선택</h2>
                             <h3>best choice for me</h3>
                             <p>디 오디너리는 사용자의 건강한 피부를 위해 항상 고민하며 나아갑니다.</p>
                         </div>
                     </div>
-                    <div class="banner3">
+                    <div class="banner3 swiper-slide">
                         <div class="txt">
                             <h2>언제나 당신의 곁에</h2>
                             <h3>always by your side</h3>
@@ -153,10 +155,8 @@
                             <p>정제된 알파 알부틴과<br>히알루론산이 함유된 고농축 세럼</p>
                         </div> <!-- product 3-->
                     </div>
-                    <div class="btn">
-                        <img src="images/prev.svg" alt="prev_btn">
-                        <img src="images/next.svg" alt="next_btn">
-                    </div> <!-- btn -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                     <div class="view_more"><a href="#">더 많은 제품 확인하기</a></div>
                 </section>
 
