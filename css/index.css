@@ -299,10 +299,10 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
         .container #PC_header.up > ul > li { height:70px; line-height:70px; }
 
         .container #PC_header .menu1 ul { margin:10px 0 0; padding:0; list-style:none; }
-        .container #PC_header .menu1 > li { padding-right:80px; box-sizing:border; text-align:center; }
+        .container #PC_header .menu1 > li { padding-right:80px; box-sizing:border-box; text-align:center; }
         .container #PC_header .menu1 > li a { text-decoration:none; color:inherit; display:block; width:100%; }
 
-        .container #PC_header .menu2 > li { padding-left:80px; box-sizing:border; }
+        .container #PC_header .menu2 > li { padding-left:80px; box-sizing:border-box; }
         .container #PC_header .menu2 > li:last-child { width:25px; height:100%; display:flex; }
         .container #PC_header.up .menu2 > li:last-child { width:20px; height:100%; display:flex; }
         .container #PC_header .menu2 > li a { display:block; width:100%; height:100%; margin:auto 0; }
