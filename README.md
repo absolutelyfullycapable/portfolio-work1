@@ -1,4 +1,4 @@
-# Portfolio Work 1 - 'The Ordinary'
+# Portfolio Work - 'The Ordinary'
 
 ### about
 - 이곳은 **개인 포트폴리오 작업물 스킨 케어 브랜드 'The Ordinary' 사이트  저장소**입니다.
