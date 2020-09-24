@@ -381,7 +381,7 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
             .container #main #about .about_1 { flex-direction:row; align-items:center; }
             .container #main #about .about_1 .txt { padding-left:13%; box-sizing:border-box; }
             .container #main #about .about_1 .txt p:first-of-type { margin:0; }
-            .container #main #about .about_1 .img { width:48%; height:515px; margin-left:auto; }
+            .container #main #about .about_1 .img { width:48%; height:515px; margin-left:auto; background:url(../images/description1.jpg) no-repeat 30% 70%; background-size:cover; }
 
             /* about 2 */
             .container #main #about .about_2 { margin:300px 0;  flex-direction:row; align-items:center; }
