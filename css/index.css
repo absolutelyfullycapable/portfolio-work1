@@ -24,7 +24,7 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
         /** logo **/
         .container header h1 { width:100px; height:100%; margin:0; text-indent:-9999px; text-align:center; }
         .container header h1.active { display:none; }
-        .container header h1 a { display:block; width:100%; height:100%; background:url(../images/logo.png) no-repeat 50% 50%; background-size:contain; }
+        .container header h1 a { display:block; width:100%; height:100%; background:url(../images/logo.svg) no-repeat 50% 50%; background-size:contain; }
     
         /** search icon **/
         .container header .search { width:27px; height:27px; }
@@ -130,36 +130,38 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
 
 /*** about ***/
 .container #main #about { width:100%; background-color:#fcf9f5; padding:110px 0; box-sizing:border-box; overflow:hidden; position:relative; }
-    .container #main #about > div > p:first-of-type { font-family:'AntroVectra', 'Apple SD Gothic Neo', serif; font-size:4.375em; color:rgba(137, 134, 109, 0.6); margin:0; }
-    .container #main #about > div > h2 { margin:-60px 0 0 0; font-weight:normal; font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; color:#544737; font-size:2.5em; }
-    .container #main #about > div > p:last-of-type { color:#89866d; line-height:1.7; padding:45px 0 65px; letter-spacing:0; font-size:1.063em; }
+    .container #main #about > div p:first-of-type { font-family:'AntroVectra', 'Apple SD Gothic Neo', serif; font-size:4.375em; color:rgba(137, 134, 109, 0.6); margin:0; }
+    .container #main #about > div h2 { margin:-60px 0 0 0; font-weight:normal; font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; color:#544737; font-size:2.5em; }
+    .container #main #about > div p:last-of-type { color:#89866d; line-height:1.7; padding:45px 0 65px; letter-spacing:0; font-size:1.063em; }
 
         /* about 1 */
         .container #main #about .about_1 { display:flex; flex-direction:column; width:100%; }
-            .container #main #about .about_1 p:first-of-type { margin-left:20px; }
-            .container #main #about .about_1 h2 { margin-left:37px; align-self:flex-start; }
-            .container #main #about .about_1 p:last-of-type { margin-left:37px; }
+            .container #main #about .about_1 .txt p:first-of-type { margin-left:20px; }
+            .container #main #about .about_1 .txt h2 { margin-left:37px; align-self:flex-start; }
+            .container #main #about .about_1 .txt p:last-of-type { margin-left:37px; }
             .container #main #about .about_1 .img { width:330px; height:220px; background:url(../images/description1.jpg) no-repeat 30% 77%; background-size:400px; z-index:9; }
             
         
         /* about 2 */
         .container #main #about .about_2 { display:flex; flex-direction:column; width:100%; margin:215px 0; }
-            .container #main #about .about_2 p:first-of-type { width:100%; text-align:right; padding-right:40px; box-sizing:border-box; }
-            .container #main #about .about_2 h2 { text-align:right; padding-right:40px; }
+            .container #main #about .about_2 .txt p:first-of-type { width:100%; text-align:right; padding-right:40px; box-sizing:border-box; }
+            .container #main #about .about_2 .txt h2 { text-align:right; padding-right:40px; }
+            .container #main #about .about_2 .txt p:last-of-type { padding-right:40px; text-align:right; }
             .container #main #about .about_2 .img { margin-left:auto; width:235px; height:245px; background:url(../images/description2.jpg) no-repeat 50% 50%; background-size:cover; }
-            .container #main #about .about_2 p:last-of-type { padding-right:40px; text-align:right; }
+            
 
         /* about 3 */
         .container #main #about .about_3 { display:flex; flex-direction:column; width:100%; width:100%; }
-            .container #main #about .about_3 p:first-of-type { margin-left:20px; }
-            .container #main #about .about_3 h2 { margin-left:37px; align-self:flex-start; }
+            .container #main #about .about_3 .txt p:first-of-type { margin-left:20px; }
+            .container #main #about .about_3 .txt h2 { margin-left:37px; align-self:flex-start; }
+            .container #main #about .about_3 .txt p:last-of-type { margin-left:37px; }
             .container #main #about .about_3 .img { width:336px; height:220px; background:url(../images/description3.jpg) no-repeat 30% 77%; background-size:400px; z-index:9; }
-            .container #main #about .about_3 p:last-of-type { margin-left:37px; }
+            
 
-
-        .container #main #about .circle1 { width:428px; height:428px; border:1px solid #cecbab50; border-radius:50%; position:absolute; top:360px; right:-100px; z-index:1; }
-        .container #main #about .circle2 { width:290px; height:290px; border:1px solid #cecbab50; border-radius:50%; position:absolute; top:1000px; left:-100px; z-index:1; }
-        .container #main #about .circle3 { width:395px; height:395px; border:1px solid #cecbab50; border-radius:50%; position:absolute; bottom:-170px; right:-170px; z-index:1; }
+        /* background circles */
+        .container #main #about .circle1 { width:428px; height:428px; border:1px solid #cecbab73; border-radius:50%; position:absolute; top:360px; right:-100px; z-index:1; }
+        .container #main #about .circle2 { width:290px; height:290px; border:1px solid #cecbab73; border-radius:50%; position:absolute; top:1000px; left:-100px; z-index:1; }
+        .container #main #about .circle3 { width:395px; height:395px; border:1px solid #cecbab73; border-radius:50%; position:absolute; bottom:-170px; right:-170px; z-index:1; }
        
         
 /*** new arrivals ***/
@@ -291,11 +293,11 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
 
     /*** PC header ***/
     .container #PC_header { padding:0 50px; box-sizing:border-box; width:85%; height:70px; background-color:#fff; box-shadow:0 0 10px rgba(0, 0, 0, 0.1); display:flex; justify-content:space-between; align-items:center; position:fixed; top:25px; left:50%; transform:translateX(-50%); z-index:999; overflow:hidden; transition:0.5s }
-    .container #PC_header.up { width:100%; top:0; background-color:rgba(255, 255, 255, 0.9); height:60px; font-size:0.9em; box-shadow:none; }
+    .container #PC_header.up { width:100%; top:0; background-color:rgba(255, 255, 255, 0.9); height:70px; font-size:0.9em; box-shadow:none; padding:0 250px; }
         .container #PC_header > ul { height:70px; list-style:none; margin:0; padding:0; display:flex; color:#2d2d2d; }
-        .container #PC_header.up > ul { height:60px; }
+        .container #PC_header.up > ul { height:70px; }
         .container #PC_header > ul > li { height:70px; line-height:70px; cursor:pointer; }
-        .container #PC_header.up > ul > li { height:60px; line-height:60px; }
+        .container #PC_header.up > ul > li { height:70px; line-height:70px; }
 
         .container #PC_header .menu1 ul { margin:10px 0 0; padding:0; list-style:none; }
         .container #PC_header .menu1 > li { padding-right:80px; box-sizing:border; text-align:center; }
@@ -308,7 +310,9 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
         .container #PC_header .menu2 > li a img { width:100%; height:100%; }
 
         .container #PC_header h1 { margin:0; width:188px; height:100%; position:absolute; right:50%; transform:translateX(50%); }
-        .container #PC_header h1 a { display:block; width:100%; height:100%; padding:10px 0; box-sizing:border-box; text-indent:-9999px; background:url(../images/logo.png) no-repeat 50% 50%; background-size:120px; }
+        .container #PC_header.up h1 { width:170px; }
+        .container #PC_header h1 a { display:block; width:100%; height:100%; padding:10px 0; box-sizing:border-box; text-indent:-9999px; background:url(../images/logo.svg) no-repeat 50% 50%; background-size:120px; }
+        .container #PC_header.up h1 a { padding:20px 0; background-size:100px; }
 
 
     /*** main contents ***/
@@ -341,22 +345,22 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
         .container #main #best_seller { padding:110px 300px; }
         .container #main #best_seller h2 { font-size:3.2em; }
 
-        /** product info **/
-        .container #main #best_seller .products { width:100%; justify-content:space-around; padding:100px 0 110px; }
-        .container #main #best_seller .products h3 { font-size:1.5em; margin-bottom:40px; } 
-        .container #main #best_seller .products p { font-size:1.2em; }
+            /** product info **/
+            .container #main #best_seller .products { width:100%; justify-content:space-around; padding:100px 0 110px; }
+            .container #main #best_seller .products h3 { font-size:1.5em; margin-bottom:40px; } 
+            .container #main #best_seller .products p { font-size:1.2em; }
 
-        .container #main #best_seller .products > div.link { background:url(../images/viewProduct.svg) 87% 57% no-repeat; background-position:87% 57%; background-size:100px; }
-        .container #main #best_seller .products > div a { cursor:pointer; }
-        
-            /* product 1 */
-            .container #main #best_seller .products .product1 a { width:100%; height:450px; margin:0 auto; background:url(../images/bestSeller1.png) no-repeat 50% 50%; background-size:cover; }
+            .container #main #best_seller .products > div.link { background:url(../images/viewProduct.svg) 87% 57% no-repeat; background-size:100px; }
+            .container #main #best_seller .products > div a { cursor:pointer; }
+            
+                /* product 1 */
+                .container #main #best_seller .products .product1 a { width:100%; height:450px; margin:0 auto; background:url(../images/bestSeller1.png) no-repeat 50% 50%; background-size:cover; }
 
-            /* product 2 */
-            .container #main #best_seller .products .product2 a { width:100%; height:450px; margin:0 auto; background:url(../images/bestSeller2.png) no-repeat 50% 50%; background-size:cover; }
+                /* product 2 */
+                .container #main #best_seller .products .product2 a { width:100%; height:450px; margin:0 auto; background:url(../images/bestSeller2.png) no-repeat 50% 50%; background-size:cover; }
 
-            /* product 3 */
-            .container #main #best_seller .products .product3 a { width:100%; height:450px; margin:0 auto; background:url(../images/bestSeller3.png) no-repeat 50% 50%; background-size:500px; }
+                /* product 3 */
+                .container #main #best_seller .products .product3 a { width:100%; height:450px; margin:0 auto; background:url(../images/bestSeller3.png) no-repeat 50% 50%; background-size:500px; }
 
         /** prev, next btn **/
         .container #main #best_seller .btn { display:none; }
@@ -367,18 +371,34 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
 
     /*** about ***/
     .container #main #about { padding:340px 0; }
-        .container #main #about > div > p:first-of-type { font-size:9em; }
-        .container #main #about > div > h2 { margin-top:-110px; font-size:3.5em; }
-        .container #main #about > div > p:last-of-type { font-size:1.3em; padding:90px 0 110px; }
+        .container #main #about > div { width:100%; }
+        .container #main #about > div .txt { width:50%; }
+        .container #main #about > div p:first-of-type { font-size:9em; }
+        .container #main #about > div h2 { margin-top:-110px; font-size:3.5em; }
+        .container #main #about > div p:last-of-type { font-size:1.3em; padding:50px 0; }
 
-        /* about 1 */
-        .container #main #about .about_1 .img { width:915px; height:515px; }
+            /* about 1 */
+            .container #main #about .about_1 { flex-direction:row; align-items:center; }
+            .container #main #about .about_1 .txt { padding-left:13%; box-sizing:border-box; }
+            .container #main #about .about_1 .txt p:first-of-type { margin:0; }
+            .container #main #about .about_1 .img { width:48%; height:515px; margin-left:auto; }
 
-        /* about 2 */
-        .container #main #about .about_2 .img { width:590px; height:630px; }
-        
-        /* about 3 */
-        .container #main #about .about_3 .img { width:860px; height:570px; }
+            /* about 2 */
+            .container #main #about .about_2 { margin:300px 0;  flex-direction:row; align-items:center; }
+            .container #main #about .about_2 .txt { width:55%; padding:0 13%; box-sizing:border-box; order:2; }
+            .container #main #about .about_2 .txt p:first-of-type { padding:0; }
+            .container #main #about .about_2 .img { width:32%; height:630px; order:1; position:relative; z-index:9; }
+            
+            /* about 3 */
+            .container #main #about .about_3 { flex-direction:row; align-items:center; }
+            .container #main #about .about_3 .txt { padding:0 13%; box-sizing:border-box; }
+            .container #main #about .about_3 .txt p:first-of-type { margin:0; }
+            .container #main #about .about_3 .img { width:45%; height:570px; }
+
+        /* background circles */
+        .container #main #about .circle1 { width:1330px; height:1330px; position:absolute; top:-350px; right:-350px; z-index:1; }
+        .container #main #about .circle2 { width:890px; height:890px; position:absolute; top:1300px; left:-100px; z-index:1; }
+        .container #main #about .circle3 { width:600px; height:600px; position:absolute; bottom:-150px; right:600px; z-index:1; }
 
 
     /** new arrivals **/
@@ -390,17 +410,19 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
         .container #main #new_arrivals .products h3 { font-size:1.5em; margin-bottom:40px; } 
         .container #main #new_arrivals .products p { font-size:1.2em; }
 
-        .container #main #new_arrivals .products > div.link { background:url(../images/viewProduct.svg) 87% 57% no-repeat; background-position:87% 57%; background-size:100px; }
+        .container #main #new_arrivals .products > div.link { background:url(../images/viewProduct.svg) 87% 57% no-repeat; background-size:100px; }
         .container #main #new_arrivals .products > div a { cursor:pointer; }
 
             /* product 1 */
             .container #main #new_arrivals .products .product1 a { width:100%; height:450px; margin:0 auto; background:url(../images/dailySet1.png) no-repeat 50% 50%; background-size:350px; }
+            .container #main #new_arrivals .products .product1.link { background:url(../images/viewProduct.svg) 100% 57% no-repeat; background-size:100px; }
 
             /* product 2 */
             .container #main #new_arrivals .products .product2 a { width:100%; height:450px; margin:0 auto; background:url(../images/new2.png) no-repeat 50% 50%; background-size:230px; }
 
             /* product 3 */
             .container #main #new_arrivals .products .product3 a { width:100%; height:450px; margin:0 auto; background:url(../images/new3.png) no-repeat 50% 50%; background-size:230px; }
+            .container #main #new_arrivals .products .product3.link { background:url(../images/viewProduct.svg) 83% 57% no-repeat; background-size:100px; }
 
         /** prev, next btn **/
         .container #main #new_arrivals .btn { display:none; }
@@ -409,24 +431,41 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
         .container #main #new_arrivals .view_more a { width:280px; height:63px; margin:0 auto; border:1px solid #89866d; font-size:1.2em; transition:0.1s; }
         .container #main #new_arrivals .view_more a:hover { background-color:#89866d; color:#fff; }
 
+
     /*** sub banner ***/
     .container #main #sub_banner { height:490px; }
         .container #main #sub_banner .box { width:60%; }
         .container #main #sub_banner .box h2 { font-size:3.5em; }
         .container #main #sub_banner .box p { margin:30px 0 0; text-align:center; font-size:1.3em; }
 
+
     /*** more contents ***/
     .container #main #sub_contents { justify-content:center; padding:200px 0; }
-        .container #main #sub_contents a { width:670px; height:380px; padding:50px; }
+        .container #main #sub_contents a { width:670px; height:380px; padding:50px; cursor:initial; }
             .container #main #sub_contents a .txt h3 { font-size:1.4em; padding-right:5%; }
         .container #main #sub_contents a .txt p { font-size:1.1em; margin-top:20px; }
-        .container #main #sub_contents a .txt .btn { width:182px; margin-top:45px; padding:13px 0; display:block; text-decoration:none; text-align:center; color:#89866d; border:1px solid #89866d; transition:0.2s; }
+        .container #main #sub_contents a .txt .btn { width:182px; margin-top:45px; padding:13px 0; display:block; text-decoration:none; text-align:center; color:#89866d; border:1px solid #89866d; transition:0.2s; cursor:pointer; }
         .container #main #sub_contents a .txt .btn:hover { background-color:#89866d; color:#fff; }
 
         .container #main #sub_contents .content1 { margin-right:45px; background-size:cover; display:flex; align-items:center; }
         .container #main #sub_contents .content2 { margin-left:45px; background-size:cover; display:flex; align-items:center; }
 
+
     /*** scroll top ***/
     .container #scroll_btn { width:55px; height:55px; bottom:-60px; right:30px; }
 
+
+    /*** footer ***/
+    .container footer { padding:50px 0; box-sizing:border-box; font-size:1.1em; }
+        .container footer p { text-align:center; }
+        .container footer p:first-of-type { font-size:1.75em; }
+        .container footer p:nth-of-type(2) { margin-top:0; }
+        .container footer p:nth-of-type(3) { margin-bottom:0; }
+        .container footer p:nth-of-type(4) { display:none; }
+        .container footer .hidden { display:block; margin:0; }
+
+        .container footer ul { margin:20px; justify-content:center; }
+        .container footer ul li a { letter-spacing:1px; }
+        .container footer ul li a:hover { color:#cccbaa; }
+        .container footer ul li::after { margin:0 20px; }
 }
