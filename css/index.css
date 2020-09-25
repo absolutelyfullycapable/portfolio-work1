@@ -381,7 +381,7 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
 
         /** view more **/
         .container #main #best_seller .view_more a { width:280px; height:63px; margin:0 auto; border:1px solid #89866d; font-size:1.2em; transition:0.1s; }
-        .container #main #best_seller .view_more a:hover { background-color:#89866d; color:#fff; }
+        .container #main #best_seller .view_more a:hover, .container #main #best_seller .view_more a:active { background-color:#89866d; color:#fff; }
 
     /*** about ***/
     .container #main #about { padding:340px 0; }
@@ -443,7 +443,7 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
 
         /** view more **/
         .container #main #new_arrivals .view_more a { width:280px; height:63px; margin:0 auto; border:1px solid #89866d; font-size:1.2em; transition:0.1s; }
-        .container #main #new_arrivals .view_more a:hover { background-color:#89866d; color:#fff; }
+        .container #main #new_arrivals .view_more a:hover, .container #main #new_arrivals .view_more a:active { background-color:#89866d; color:#fff; }
 
 
     /*** sub banner ***/
@@ -459,7 +459,7 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
             .container #main #sub_contents a .txt h3 { font-size:1.4em; padding-right:5%; }
         .container #main #sub_contents a .txt p { font-size:1.1em; margin-top:20px; }
         .container #main #sub_contents a .txt .btn { width:182px; margin-top:45px; padding:13px 0; display:block; text-decoration:none; text-align:center; color:#89866d; border:1px solid #89866d; transition:0.2s; cursor:pointer; }
-        .container #main #sub_contents a .txt .btn:hover { background-color:#89866d; color:#fff; }
+        .container #main #sub_contents a .txt .btn:hover, .container #main #sub_contents a .txt .btn:hover { background-color:#89866d; color:#fff; }
 
         .container #main #sub_contents .content1 { margin-right:45px; background-size:cover; display:flex; align-items:center; }
         .container #main #sub_contents .content2 { margin-left:45px; background-size:cover; display:flex; align-items:center; }
