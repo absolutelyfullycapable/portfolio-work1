@@ -64,14 +64,15 @@ $(function () {
     // 배너 자동 슬라이드
     let swiper = new Swiper('.swiper-container', {
         autoplay: {
-            delay: 2000
+            delay: 2000,
+            disableOnInteraction:false
         }, // 자동 슬라이드
         loop: true,
         speed: 2000
     });
-    $('#banner').on('mousemove',function(){
-        swiper.autoplay.start();
-    });
+    // $('#banner').on('mousemove',function(){
+    //     swiper.autoplay.start();
+    // });
 
     // 스크롤 시 #PC_header 애니메이션
     $(window).on('scroll', function () {
@@ -112,23 +113,6 @@ $(function () {
         $('#PC_header .menu1 li ul').stop().slideDown();
     }, function () {
         $('#PC_header .menu1 li ul').stop().slideUp();
-    });
-
-    // 제품 안에 있는 소메뉴 호버 시 한글에서 영어로 언어 바뀜
-    $('.container #PC_header .menu1 ul li').eq(0).hover(function() {
-        $(this).text('Skin care').css('color', '#2d2d2d');
-    }, function() {
-        $(this).text('스킨 케어').css('color', '#2d2d2d');
-    });
-    $('.container #PC_header .menu1 ul li').eq(1).hover(function() {
-        $(this).text('Hair care').css('color', '#2d2d2d');
-    }, function() {
-        $(this).text('헤어 케어').css('color', '#2d2d2d');
-    });
-    $('.container #PC_header .menu1 ul li').eq(2).hover(function() {
-        $(this).text('Make-up').css('color', '#2d2d2d');
-    }, function() {
-        $(this).text('메이크업').css('color', '#2d2d2d');
     });
 
     // 배너 부분 scroll 이미지 클릭하면 다음 화면으로 부드럽게 넘어감
