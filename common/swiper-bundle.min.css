@@ -281,12 +281,12 @@
 }
 
 .swiper-pagination-bullet {
-    width: 8px;
-    height: 8px;
+    width: 25px;
+    height: 5px;
     display: inline-block;
-    border-radius: 100%;
     background: #000;
-    opacity: .2
+    opacity: .2;
+    outline: none;
 }
 
 button.swiper-pagination-bullet {
