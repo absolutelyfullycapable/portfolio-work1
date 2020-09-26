@@ -170,7 +170,7 @@ a { display:block; text-decoration:none; }
 
     /*** banner ***/
     .container #banner { height:430px; background-size:cover; }
-        .container #banner .txt { background:url(../images/line.svg) no-repeat 23% 55%, url(../images/line.svg) no-repeat 77% 55%; background-size:400px; }
+        .container #banner .txt { background:url(../images/line.svg) no-repeat 23% 55%, url(../images/line.svg) no-repeat 77% 55%; background-size:20%; }
             .container #banner .txt h2 { margin:13px 0; font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-size:2.5em; font-weight:normal; }
             .container #banner .txt p { font-size:1.2em; margin:0; font-weight:400; }
 
