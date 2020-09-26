@@ -107,7 +107,33 @@ $(function() {
         $('.PC_select li').removeClass('click');
         $(this).addClass('click');
     });
+    
+    // PC 화면에서 전체 클릭 시 모든 제품 보임
+    $('.PC_select li').eq(0).on('click', function() {
+        $('.products a').css('display', 'block');
+    });
 
+    // PC 화면에서 스킨 케어 클릭 시 스킨 케어 제품만 보임
+    $('.PC_select li').eq(1).on('click', function() {
+        $('.skin').css('display', 'block');
+        $('.hair').css('display', 'none');
+        $('.makeup').css('display', 'none');
+    });
+
+    // PC 화면에서 헤어 케어 클릭 시 헤어 케어 제품만 보임
+    $('.PC_select li').eq(2).on('click', function() {
+        $('.skin').css('display', 'none');
+        $('.hair').css('display', 'block');
+        $('.makeup').css('display', 'none');
+    });
+    
+    // PC 화면에서 메이크업 클릭 시 헤어 케어 제품만 보임
+    $('.PC_select li').eq(3).on('click', function() {
+        $('.skin').css('display', 'none');
+        $('.hair').css('display', 'none');
+        $('.makeup').css('display', 'block');
+    });
+    
     /*
     // 모바일, 태블릭 화면과 PC 화면에서 보이는 제품 갯수 다르게
     var product = $('.products > a');
