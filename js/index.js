@@ -49,8 +49,8 @@ $(function () {
     });
 
     // 검색창 내 X 버튼 클릭 시 검색창 사라짐
-    $('#search_box svg').on('click', function () {
-        var wd = $(window).width();
+    var wd = $(window).width();
+    $('#search_box svg').on('click', function () {    
         if(wd > 0 && wd < 1400) {
             $('#search_box').animate({
                 top: -230
@@ -66,13 +66,10 @@ $(function () {
         autoplay: {
             delay: 2000,
             disableOnInteraction:false
-        }, // 자동 슬라이드
+        },
         loop: true,
         speed: 2000
     });
-    // $('#banner').on('mousemove',function(){
-    //     swiper.autoplay.start();
-    // });
 
     // 스크롤 시 #PC_header 애니메이션
     $(window).on('scroll', function () {
@@ -124,6 +121,28 @@ $(function () {
         }, 700, 'easeOutCirc');
     });
 
+    // PC를 제외한 디바이스에서만 best seller 부분 swiper 플러그인
+    if (wd > 0 && wd < 1440) {
+        $('#best_seller').addClass('BS-container');
+        $('#best_seller .products').addClass('swiper-wrapper');
+        $('#best_seller .product1').addClass('swiper-slide');
+        $('#best_seller .product2').addClass('swiper-slide');
+        $('#best_seller .product3').addClass('swiper-slide');
+    } else {
+        $('#best_seller').removeClass('BS-container');
+        $('#best_seller .products').removeClass('swiper-wrapper');
+        $('#best_seller .product1').removeClass('swiper-slide');
+        $('#best_seller .product2').removeClass('swiper-slide');
+        $('#best_seller .product3').removeClass('swiper-slide');
+    }
+
+    var BSswiper = new Swiper('.BS-container', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
     // PC 화면에서 best seller 이미지 영역 호버 시 상품 상세 페이지로 이동 나타내는 아이콘 나타남
     $('#best_seller .products > div').hover(function () {
         $(this).addClass('link');
@@ -131,18 +150,32 @@ $(function () {
         $(this).removeClass('link');
     })
 
-    // new arrivals 이미지 영역 호버 시 상품 상세 페이지로 이동 나타내는 아이콘 나타남
+    // PC를 제외한 디바이스에서만 new arrivals 부분 swiper 플러그인
+    if (wd > 0 && wd < 1440) {
+        $('#new_arrivals').addClass('NA-container');
+        $('#new_arrivals .products').addClass('swiper-wrapper');
+        $('#new_arrivals .product1').addClass('swiper-slide');
+        $('#new_arrivals .product2').addClass('swiper-slide');
+        $('#new_arrivals .product3').addClass('swiper-slide');
+    } else {
+        $('#new_arrivals').removeClass('NA-container');
+        $('#new_arrivals .products').removeClass('swiper-wrapper');
+        $('#new_arrivals .product1').removeClass('swiper-slide');
+        $('#new_arrivals .product2').removeClass('swiper-slide');
+        $('#new_arrivals .product3').removeClass('swiper-slide');
+    }
+
+    var NAswiper = new Swiper('.NA-container', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
+    // PC 화면에서 new arrivals 이미지 영역 호버 시 상품 상세 페이지로 이동 나타내는 아이콘 나타남
     $('#new_arrivals .products > div').hover(function () {
         $(this).addClass('link');
     }, function () {
         $(this).removeClass('link');
     })
-
-    // 모바일 화면에서 new arrivals 영역에 있는 화살표 클릭하면 이미지 이동
-    $('#new_arrivals .btn .prev').on('click', function() {
-        $('#new_arrivals .products').animate({marginLeft: '+=100%'}, 1000, 'easeOutQuart')
-    });
-    $('#new_arrivals .btn .next').on('click', function() {
-        $('#new_arrivals .products').animate({marginLeft: '-=100%'}, 1000, 'easeOutQuart')
-    });
 });
