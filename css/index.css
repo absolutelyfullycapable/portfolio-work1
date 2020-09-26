@@ -233,7 +233,7 @@ a { display:block; text-decoration:none; }
 
 
 /*** scroll top ***/
-.container #scroll_btn { width:45px; height:45px; background:#ceb8a1 url(../images/scrollup.svg) no-repeat 50% 50%; background-size:18px; border-radius:50%; position:fixed; bottom:-45px; right:15px; z-index:9999; box-shadow:5px 5px 10px rgba(0, 0, 0, 0.1); cursor:pointer; }
+.container #scroll_btn { width:45px; height:45px; background:#ceb8a1 url(../images/scrollup.svg) no-repeat 50% 50%; background-size:18px; border-radius:50%; position:fixed; bottom:-45px; right:15px; z-index:99; box-shadow:5px 5px 10px rgba(0, 0, 0, 0.1); cursor:pointer; }
 
 
 /***** Tablet *****/
