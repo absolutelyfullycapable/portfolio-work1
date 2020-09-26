@@ -18,7 +18,7 @@
 }
 
 :root {
-    --swiper-theme-color: #007aff
+    --swiper-theme-color: #89866d
 }
 
 .swiper-container {
@@ -196,7 +196,8 @@
 
 .swiper-button-prev:after,
 .swiper-container-rtl .swiper-button-next:after {
-    content: 'prev'
+    content: 'prev';
+    outline: none;
 }
 
 .swiper-button-next,
@@ -207,7 +208,8 @@
 
 .swiper-button-next:after,
 .swiper-container-rtl .swiper-button-prev:after {
-    content: 'next'
+    content: 'next';
+    outline: none;
 }
 
 .swiper-button-next.swiper-button-white,
@@ -601,4 +603,8 @@ button.swiper-pagination-bullet {
     z-index: 0;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden
+}
+
+@media (min-width:1440) {
+    .container #main #best_seller .swiper-button-next, .container #main #best_seller .swiper-button-prev { display:none; }
 }
