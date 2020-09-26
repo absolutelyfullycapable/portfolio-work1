@@ -61,7 +61,6 @@ $(function() {
         
     });
 
-    
     // 스크롤 시 #PC_header 애니메이션
     $(window).on('scroll', function () {
         var scroll = $(this).scrollTop();
@@ -101,6 +100,39 @@ $(function() {
         $('#PC_header .menu1 li ul').stop().slideDown();
     }, function () {
         $('#PC_header .menu1 li ul').stop().slideUp();
+    });
+
+    // PC 화면에서 제품 카테고리 클릭 시 애니메이션
+    $('.PC_select li').on('click', function() {
+        $('.PC_select li').removeClass('click');
+        $(this).addClass('click');
+    });
+
+    /*
+    // 모바일, 태블릭 화면과 PC 화면에서 보이는 제품 갯수 다르게
+    var product = $('.products > a');
+    var wt = $(window).width();
+    if(wt > 0 && wt < 767) {
+        product.eq(5).nextAll('.products > a').css('display', 'none');
+    } else if(wt >= 767 && wt < 1440) {
+        product.eq(5).nextAll('.products > a').css('display', 'block');
+        product.eq(7).nextAll('.products > a').css('display', 'none');
+    } else {
+        product.eq(7).nextAll('.products > a').css('display', 'block');
+    }
+    */
+
+    // 상품 목록 이미지 호버 시 장바구니 아이콘 나타남
+    $('.products .img').hover(function() {
+        $(this).children('.products .cart').stop().animate({bottom: 20}, 400, 'easeOutCubic');
+    }, function() {
+        $(this).children('.products .cart').stop().animate({bottom: -100}, 400, 'easeOutCubic');
+    });
+
+    // 장바구니 아이콘 클릭 시 '장바구니에 추가되었습니다.' 알림창 송출 후 페이지 새로 고침
+    $('.products .cart').on('click', function(e) {
+        alert('장바구니에 추가되었습니다.');
+        e.preventDefault();
     });
 
     // 페이지 클릭 애니메이션
