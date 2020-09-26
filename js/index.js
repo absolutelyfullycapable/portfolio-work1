@@ -157,12 +157,16 @@ $(function () {
         $('#new_arrivals .product1').addClass('swiper-slide');
         $('#new_arrivals .product2').addClass('swiper-slide');
         $('#new_arrivals .product3').addClass('swiper-slide');
+        $('#new_arrivals .swiper-button-next').css({'color': '#89866d', 'padding': '0px 5px', 'outline': 'none'});
+        $('#new_arrivals .swiper-button-prev').css({'color': '#89866d', 'padding': '0px 5px', 'outline': 'none'});
     } else {
         $('#new_arrivals').removeClass('NA-container');
         $('#new_arrivals .products').removeClass('swiper-wrapper');
         $('#new_arrivals .product1').removeClass('swiper-slide');
         $('#new_arrivals .product2').removeClass('swiper-slide');
         $('#new_arrivals .product3').removeClass('swiper-slide');
+        $('#new_arrivals .swiper-button-next').css('display', 'none');
+        $('#new_arrivals .swiper-button-prev').css('display', 'none');
     }
 
     var NAswiper = new Swiper('.NA-container', {
