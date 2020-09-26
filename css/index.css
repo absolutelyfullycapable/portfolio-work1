@@ -73,7 +73,7 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
             .container #banner .banner_box h2, .container #banner .banner_box h3, .container #banner .banner_box p { margin:0; font-weight:normal; text-align:center; }
 
             .container #banner .banner_box h2 { font-size:2.1875em; font-weight:400; letter-spacing:2px; position: relative; z-index:9; }
-            .container #banner .banner_box h3 { font-size:1.5625em; font-family:'TamoroScriptPersonalUseOnly','Apple SD Gothic Neo',serif; color:#c6c4b9; width:100%; position:absolute; top:20px; left:50%; transform:translateX(-50%); }
+            .container #banner .banner_box h3 { font-size:1.5625em; font-family:'TamoroScriptPersonalUseOnly','Apple SD Gothic Neo',serif; color:#c6c4b9; width:100%; position:absolute; top:25px; left:50%; transform:translateX(-50%); }
             .container #banner .banner_box div p { text-align:center; margin-top:35px; line-height:1.5; font-weight:300; color:#222; }
         
         /* first banner */
@@ -331,6 +331,7 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
 
     /*** main contents ***/
         /** banner **/
+        .container #banner .banner_box h3 { top:30px; }
         .container #banner .banner_box div .txt p { line-height:1.7;  }
 
         /* first banner */
