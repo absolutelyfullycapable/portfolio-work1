@@ -58,11 +58,11 @@ a { display:block; text-decoration:none; }
         .container nav .gnb > li:first-child ul { width:100%; display:flex; font-size:1.125em; font-weight:400; }
         .container nav .gnb > li:first-child ul li:first-child { margin-right:65px; }
 
-        .container nav .gnb > li:nth-child(2), .container nav .gnb > li:nth-child(3), .container nav .gnb > li:nth-child(4), .container nav .gnb > li:nth-child(5) { font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-size:3.125em; margin-bottom:20px; }
+        .container nav .gnb > li:nth-child(2), .container nav .gnb > li:nth-child(3), .container nav .gnb > li:nth-child(4), .container nav .gnb > li:nth-child(5) { font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-size:2.3em; margin-bottom:20px; }
         .container nav .gnb > li:nth-child(2) { margin-top:60px; }
         .container nav .gnb > li:nth-child(6), .container nav .gnb > li:nth-child(7), .container nav .gnb > li:last-child { font-weight:400; font-size:1.188em; }
         .container nav .gnb > li:nth-child(6) { margin-top:60px; }
-        .container nav .gnb > li:nth-child(7) { margin:30px 0; }
+        .container nav .gnb > li:nth-child(7) { margin:20px 0; }
 
 
 /*** banner ***/
@@ -78,25 +78,28 @@ a { display:block; text-decoration:none; }
     /** select box **/
     .container #main form { width:100%; display:flex; justify-content:space-between; align-items:center; padding:50px 25px; box-sizing:border-box; }
         .container #main form div { width:120px; }
-        .container #main form div select { width:100%; outline:none; border:none; font-size:0.9em; font-weight:400; color:#3a3123; }
+        .container #main form div select { width:100%; outline:none; border:none; font-size:0.9em; font-weight:400; color:#3a3123; -webkit-appearance:none; -moz-appearance:none; appearance:none; background:transparent url(../images/selectDown.svg) no-repeat 95% 50%; background-size:12px; padding:10px 0; box-sizing:border-box; }
+        .container #main form div select::-ms-expand { display:none; }
+        .container #main form .PC_select { display:none; }
 
     /** products **/
     .container #main .products { width:100%; display:flex; flex-wrap:wrap; justify-content:center; text-align:center; }
-        .container #main .products a { padding:0 17px; box-sizing:border-box; color:#222; }
-            .container #main .products ul { margin-bottom:110px; }
-                .container #main .products ul .img { height:340px; margin-bottom:50px; }
-                    .container #main .products ul .img img { display:block; width:340px; }
+        .container #main .products a { padding:0 17px; margin-bottom:110px; box-sizing:border-box; color:#222; }
+                .container #main .products ul .img { height:340px; margin-bottom:50px;  position:relative; overflow:hidden; }
+                    .container #main .products ul .img img { display:block; width:340px;  }
+                    .container #main .products ul .img .cart { width:40px; height:40px; border-radius:50%; background:#d39d67 url(../images/cart.svg) 50% 50% no-repeat; background-size:23px; position:absolute; bottom:-100px; right:10px; }
                 .container #main .products ul li:nth-child(2) { font-size:1.1em; font-weight:400; margin-bottom:20px; }
                 .container #main .products ul li:last-child { font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-size:1.05em; color:#3a3123; }
                 .container #main .products ul li:last-child span { font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; }
 
                 .container #main .products .product1 li em { font-style:normal; text-decoration:line-through; color:#6d6d6d; }
+                .container #main .products .product1 .discount { width:40px; height:40px; background-color:#d39d67; border-radius:50%; position:absolute; top:10px; right:10px; color:#fff; font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-size:1.2em; display:flex; justify-content:center; align-items:center; }
                 .container #main .products .product12 ul { margin-bottom:0; }
 
     /** pagination **/
-    .container #main .page { width:100%; padding:0 45px; box-sizing:border-box; }
-        .container #main .page ul { width:100%; display:flex; justify-content:center; margin:110px 0; }
-            .container #main .page ul li { font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-size:1.2em; margin:0 20px; box-sizing:border-box; }
+    .container #main .page { width:100%; padding:0 45px; box-sizing:border-box; margin-bottom:110px; }
+        .container #main .page ul { width:100%; display:flex; justify-content:center; }
+            .container #main .page ul li { font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-size:1.2em; margin:0 20px; box-sizing:border-box; cursor:pointer; }
             .container #main .page ul li.click { text-decoration:underline; }
             .container #main .page ul li img { height:23px; }
 
@@ -120,9 +123,6 @@ a { display:block; text-decoration:none; }
 
 /*** scroll top ***/
 .container #scroll_btn { width:45px; height:45px; background:#ceb8a1 url(../images/scrollup.svg) no-repeat 50% 50%; background-size:18px; border-radius:50%; position:fixed; bottom:-45px; right:15px; z-index:9999; box-shadow:5px 5px 10px rgba(0, 0, 0, 0.1); cursor:pointer; }
-
-
-
 
 
 
@@ -167,6 +167,41 @@ a { display:block; text-decoration:none; }
     /** search **/
     .container #search_box { width:20%; top:110px; right:7.5%; box-shadow:0 0 10px rgba(0, 0, 0, 0.1); transition:0.5s; opacity:0; }
     .container #search_box.act { top:85px; width:20%; right:250px; box-shadow:none; }
+
+    /*** banner ***/
+    .container #banner { height:430px; background-size:cover; }
+        .container #banner .txt { background:url(../images/line.svg) no-repeat 23% 55%, url(../images/line.svg) no-repeat 77% 55%; background-size:400px; }
+            .container #banner .txt h2 { margin:13px 0; font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-size:2.5em; font-weight:normal; }
+            .container #banner .txt p { font-size:1.2em; margin:0; font-weight:400; }
+
+                 
+    /*** main ***/
+    /** select box **/
+    .container #main form { width:85%; padding:20px 40px; margin:110px auto; border-bottom:1px solid #84786b; }
+        .container #main form div select { padding:10px 15px; box-sizing:border-box; border:1px solid #84786b; background:transparent url(../images/selectDown.svg) no-repeat 80% 50%; background-size:13px; color:#84786b; font-size:1em; }
+        .container #main form .select_box1 { display:none; }
+        .container #main form .select_box2 { width:150px; }
+        .container #main form .PC_select { display:block; width:80%; }
+            .container #main form .PC_select ul { display:flex; }
+                .container #main form .PC_select ul li { margin:0 4%; cursor:pointer; font-size:1.15em; color:#84786b; }
+                .container #main form .PC_select ul li.click { color:#3a3123; font-weight:400; }
+                .container #main form .PC_select ul li:first-child { margin-left:0; }
+
+    /** products **/
+    .container #main .products { padding:0; }
+        .container #main .products a { padding:0 5px; margin-bottom:170px; }
+        .container #main .products ul .img { height:560px; margin-bottom:50px; }
+            .container #main .products ul .img img { width:560px; }
+            .container #main .products ul .img .cart { width:60px; height:60px; border-radius:50%; background:#d39d67 url(../images/cart.svg) 50% 50% no-repeat; background-size:26px; position:absolute; bottom:-100px; right:20px; }
+        .container #main .products ul li:nth-child(2) { font-size:1.25em; margin-bottom:25px; }
+        .container #main .products ul li:last-child { font-size:1.25em; }
+
+        .container #main .products .product1 .discount { width:60px; height:60px; top:20px; right:20px; color:#fff; font-size:1.8em; }
+
+    /** pagination **/
+    .container #main .page { margin-bottom:170px; }
+        .container #main .page ul li { font-size:1.5em; margin:0 25px; }
+
 
     /*** scroll top ***/
     .container #scroll_btn { width:55px; height:55px; bottom:-60px; right:30px; }
