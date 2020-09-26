@@ -13,7 +13,7 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
 .container header.active { background-color:transparent; z-index:9999; }
 
     /** menu icon **/
-    .container header .wrapper-menu { width:20px; height:20px; display:flex; flex-direction:column; justify-content:space-between; cursor:pointer; transition:transform 330ms ease-out; }
+    .container header .wrapper-menu { width:20px; height:20px; display:flex; flex-direction:column; justify-content:space-between; cursor:pointer; transition:transform 330ms ease-out; position:relative; z-index:9999; }
     .container header .wrapper-menu.open { transform:rotate(-45deg); }
         .container header .line-menu { background-color:#000; border-radius: 50px; width:100%; height:2px; }
         .container header .line-menu.half { width:50%; }
@@ -57,10 +57,10 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
         .container nav .gnb > li:first-child ul li:first-child { margin-right:65px; }
 
         .container nav .gnb > li:nth-child(2), .container nav .gnb > li:nth-child(3), .container nav .gnb > li:nth-child(4) { font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-size:3.125em; }
-        .container nav .gnb > li:nth-child(2) { margin-top:100px; }
+        .container nav .gnb > li:nth-child(2) { margin-top:80px; }
         .container nav .gnb > li:nth-child(3) { margin:20px 0; }
         .container nav .gnb > li:nth-child(5), .container nav .gnb > li:nth-child(6), .container nav .gnb > li:last-child { font-weight:400; font-size:1.188em; }
-        .container nav .gnb > li:nth-child(5) { margin-top:90px; }
+        .container nav .gnb > li:nth-child(5) { margin-top:80px; }
         .container nav .gnb > li:nth-child(6) { margin:30px 0; }
 
 
