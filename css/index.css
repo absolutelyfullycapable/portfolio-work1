@@ -135,7 +135,7 @@ a { display:block; text-decoration:none; }
 /*** about ***/
 .container #main #about { width:100%; background-color:#fcf9f5; padding:110px 0; box-sizing:border-box; overflow:hidden; position:relative; }
     .container #main #about > div p:first-of-type { font-family:'AntroVectra', 'Apple SD Gothic Neo', serif; font-size:4.375em; color:rgba(137, 134, 109, 0.6); margin:0; }
-    .container #main #about > div h2 { margin:-60px 0 0 0; font-weight:normal; font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; color:#544737; font-size:2.5em; }
+    .container #main #about > div h2 { margin:-80px 0 0 0; font-weight:normal; font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; color:#544737; font-size:2.5em; }
     .container #main #about > div p:last-of-type { color:#89866d; line-height:1.7; padding:45px 0 65px; letter-spacing:0; font-size:1.063em; }
 
         /* about 1 */
@@ -392,7 +392,7 @@ a { display:block; text-decoration:none; }
         .container #main #about > div { width:100%; }
         .container #main #about > div .txt { width:50%; }
         .container #main #about > div p:first-of-type { font-size:9em; }
-        .container #main #about > div h2 { margin-top:-110px; font-size:3.5em; }
+        .container #main #about > div h2 { margin-top:-150px; font-size:3.5em; }
         .container #main #about > div p:last-of-type { font-size:1.3em; padding:50px 0; }
 
             /* about 1 */
