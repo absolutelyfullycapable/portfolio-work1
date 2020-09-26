@@ -1,8 +1,12 @@
 @charset "utf-8";
 
-/***** Mobile *****/
+/****** basic ******/
 html, body { height:100%; }
-body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; font-weight:300; letter-spacing:-0.5px; }
+body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; font-weight:300; letter-spacing:-1px; }
+ul, li { list-style:none; margin:0; padding:0; }
+a { display:block; text-decoration:none; }
+
+/***** Mobile *****/
 
 /**** container ****/
 .container { width:100%; height:100%; position:relative; }
@@ -25,12 +29,12 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
         /** logo **/
         .container header h1 { width:100px; height:100%; margin:0; text-indent:-9999px; text-align:center; }
         .container header h1.active { display:none; }
-        .container header h1 a { display:block; width:100%; height:100%; background:url(../images/logo.svg) no-repeat 50% 50%; background-size:contain; }
+        .container header h1 a { width:100%; height:100%; background:url(../images/logo.svg) no-repeat 50% 50%; background-size:contain; }
     
         /** search icon **/
         .container header .search { width:20px; height:20px; }
         .container header .search.active { display:none; }
-        .container header .search a { display:block; width:100%; height:100%;  background:url(../images/search.svg) no-repeat; background-size:cover; }
+        .container header .search a { width:100%; height:100%;  background:url(../images/search.svg) no-repeat; background-size:cover; }
 
 /*** PC header ***/
 .container #PC_header { display:none; }
@@ -49,8 +53,7 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
 /*** mobile navigation ***/
 .container nav { padding:0 22px; box-sizing:border-box; width:100%; height:100%; background-color:#fcf9f5; position:fixed; top:0; left:-100%; z-index:999; }
 .container nav.show { left:0; }
-    .container nav ul { margin:0; padding:0; list-style:none; }
-    .container nav ul a { text-decoration:none; display:block; color:#3a3123; }
+    .container nav ul a { color:#3a3123; }
 
     .container nav .gnb { padding-top:100px; box-sizing:border-box; } 
         .container nav .gnb > li:first-child ul { width:100%; display:flex; font-size:1.125em; font-weight:400; }
@@ -111,15 +114,15 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
 
             /* product 1 */
             .container #main #best_seller .products .product1 { width:33.333333%; }
-            .container #main #best_seller .products .product1 a { display:block; width:300px; height:300px; margin:0 auto; background:url(../images/bestSeller1.png) no-repeat 50% 50%; background-size:contain; }
+            .container #main #best_seller .products .product1 a { width:300px; height:300px; margin:0 auto; background:url(../images/bestSeller1.png) no-repeat 50% 50%; background-size:contain; }
 
             /* product 2 */
             .container #main #best_seller .products .product2 { width:33.333333%; }
-            .container #main #best_seller .products .product2 a { display:block; width:300px; height:300px; margin:0 auto; background:url(../images/bestSeller2.png) no-repeat 50% 50%; background-size:contain; }
+            .container #main #best_seller .products .product2 a { width:300px; height:300px; margin:0 auto; background:url(../images/bestSeller2.png) no-repeat 50% 50%; background-size:contain; }
 
             /* product 3 */
             .container #main #best_seller .products .product3 { width:33.333333%; }
-            .container #main #best_seller .products .product3 a { display:block; width:300px; height:300px; margin:0 auto; background:url(../images/bestSeller3.png) no-repeat 50% 50%; background-size:contain; }
+            .container #main #best_seller .products .product3 a { width:300px; height:300px; margin:0 auto; background:url(../images/bestSeller3.png) no-repeat 50% 50%; background-size:contain; }
 
         /** prev, next btn **/
         .container #main #best_seller .swiper-button-next, .container #main #best_seller .swiper-button-prev { outline:none; color:#89866d; padding:0 15px; }
@@ -176,20 +179,20 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
 
             /* product 1 */
             .container #main #new_arrivals .products .product1 { width:33.333333%; }
-            .container #main #new_arrivals .products .product1 a { display:block; width:300px; height:300px; margin:0 auto; background:url(../images/dailySet1.png) no-repeat 50% 50%; background-size:235px; }
+            .container #main #new_arrivals .products .product1 a { width:300px; height:300px; margin:0 auto; background:url(../images/dailySet1.png) no-repeat 50% 50%; background-size:235px; }
 
             /* product 2 */
             .container #main #new_arrivals .products .product2 { width:33.333333%; }
-            .container #main #new_arrivals .products .product2 a { display:block; width:300px; height:300px; margin:0 auto; background:url(../images/new2.png) no-repeat 50% 50%; background-size:140px; }
+            .container #main #new_arrivals .products .product2 a { width:300px; height:300px; margin:0 auto; background:url(../images/new2.png) no-repeat 50% 50%; background-size:140px; }
 
             /* product 3 */
             .container #main #new_arrivals .products .product3 { width:33.333333%; }
-            .container #main #new_arrivals .products .product3 a { display:block; width:300px; height:300px; margin:0 auto; background:url(../images/new3.png) no-repeat 50% 50%; background-size:140px; }
+            .container #main #new_arrivals .products .product3 a { width:300px; height:300px; margin:0 auto; background:url(../images/new3.png) no-repeat 50% 50%; background-size:140px; }
 
      /** prev, next btn **/
      .container #main #new_arrivals .swiper-button-next, .container #main #new_arrivals .swiper-button-prev { outline:none; color:#89866d; padding:0 5px; }
 
-    .container #main #new_arrivals .view_more a { text-decoration:none; color:#89866d; display:flex; justify-content:center; align-items:center; width:215px; height:50px; margin:0 auto; border:1px solid #89866d; }
+    .container #main #new_arrivals .view_more a { color:#89866d; display:flex; justify-content:center; align-items:center; width:215px; height:50px; margin:0 auto; border:1px solid #89866d; }
     .container #main #new_arrivals .view_more a:active { background-color:#89866d; color:#cccbaa; }
      
     
@@ -202,7 +205,7 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
 
 /*** more contents ***/
 .container #main #sub_contents { background-color:#fcf9f5; padding:108px 0; }
-    .container #main #sub_contents a { display:block; width:315px; height:180px; text-decoration:none; padding:34.5px 30px; box-sizing:border-box; box-shadow:0 0 16px rgba(0, 0, 0, 0.05); }
+    .container #main #sub_contents a { width:315px; height:180px; padding:34.5px 30px; box-sizing:border-box; box-shadow:0 0 16px rgba(0, 0, 0, 0.05); }
     .container #main #sub_contents a .txt { width:50%; }
         .container #main #sub_contents a .txt h3 { font-weight:normal; margin:0; color:#222; font-size:1.063em; line-height:1.5; padding-right:15%; }
         .container #main #sub_contents a .txt p { margin:0; color:#4c4c4c; font-size:0.938em; margin-top:17px; line-height:1.5; }
@@ -222,8 +225,8 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
     .container footer p:nth-of-type(2) { font-family:'Kumbh Sans','Apple SD Gothic Neo', sans-serif; color:#cccbaa; margin-top:10px; }
     .container footer p:nth-of-type(3) { margin:26px 0; }
 
-    .container footer ul { margin:26px 0 0; padding:0; list-style:none; display:flex; text-transform:uppercase; }
-    .container footer ul li a { text-decoration:none; color:#969687; }
+    .container footer ul { margin:26px 0 0; display:flex; text-transform:uppercase; }
+    .container footer ul li a { display:inline; text-decoration:none; color:#969687; }
     .container footer ul li::after { content:"|"; margin:0 10px; font-size:0.875em; color:#969687; }
     .container footer ul li:last-child::after { content:none; }
 
@@ -295,7 +298,7 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
     /*** PC header ***/
     .container #PC_header { padding:0 30px; box-sizing:border-box; width:85%; height:70px; background-color:#fff; box-shadow:0 0 10px rgba(0, 0, 0, 0.1); display:flex; justify-content:space-between; align-items:center; position:fixed; top:25px; left:50%; transform:translateX(-50%); z-index:999; transition:0.5s; }
     .container #PC_header.up { width:100%; top:0; background-color:rgba(255, 255, 255, 0.9); height:70px; font-size:0.9em; box-shadow:none; padding:0 250px; }
-        .container #PC_header > ul { height:70px; list-style:none; margin:0; padding:0; display:flex; color:#2d2d2d; }
+        .container #PC_header > ul { height:70px; display:flex; color:#2d2d2d; }
         .container #PC_header.up > ul { height:70px; }
         .container #PC_header > ul > li { height:70px; line-height:70px; cursor:pointer; transition:0.2s; }
         .container #PC_header.up > ul > li { text-align:center; width:120px; height:70px; line-height:70px; }
@@ -305,9 +308,9 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
         .container #PC_header .menu1 > li ul li a { color:#2d2d2d; }
         .container #PC_header .menu1 > li:hover ul li a { color:#2d2d2d; }
 
-        .container #PC_header .menu1 > li a { text-decoration:none; color:inherit; display:block; }
+        .container #PC_header .menu1 > li a { color:inherit; }
         .container #PC_header .menu1 > li:first-child { position:relative; }
-        .container #PC_header .menu1 ul { position:absolute; top:85px; width:120px; padding:0; list-style:none; background-color:#fff; box-shadow:0 0 10px rgba(0, 0, 0, 0.1);  }
+        .container #PC_header .menu1 ul { position:absolute; top:85px; width:120px; list-style:none; background-color:#fff; box-shadow:0 0 10px rgba(0, 0, 0, 0.1);  }
         .container #PC_header .menu1 ul li { transition:0.2s; }
         .container #PC_header .menu1 ul li:hover { background-color:#d39d671e; }
         .container #PC_header.up .menu1 ul { background-color:rgba(255, 255, 255, 0.9); box-shadow:none; }
@@ -320,7 +323,7 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
 
         .container #PC_header h1 { margin:0; width:188px; height:100%; position:absolute; right:50%; transform:translateX(50%); }
         .container #PC_header.up h1 { width:170px; }
-        .container #PC_header h1 a { display:block; width:100%; height:100%; padding:10px 0; box-sizing:border-box; text-indent:-9999px; background:url(../images/logo.svg) no-repeat 50% 50%; background-size:120px; }
+        .container #PC_header h1 a { width:100%; height:100%; padding:10px 0; box-sizing:border-box; text-indent:-9999px; background:url(../images/logo.svg) no-repeat 50% 50%; background-size:120px; }
         .container #PC_header.up h1 a { padding:20px 0; background-size:100px; }
 
     
