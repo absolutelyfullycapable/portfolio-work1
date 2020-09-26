@@ -99,7 +99,7 @@ a { display:block; text-decoration:none; }
     /** pagination **/
     .container #main .page { width:100%; padding:0 45px; box-sizing:border-box; margin-bottom:110px; }
         .container #main .page ul { width:100%; display:flex; justify-content:center; }
-            .container #main .page ul li { font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-size:1.2em; margin:0 20px; box-sizing:border-box; cursor:pointer; }
+            .container #main .page ul li { font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-size:1.2em; padding:0 20px; box-sizing:border-box; cursor:pointer; }
             .container #main .page ul li.click { text-decoration:underline; }
             .container #main .page ul li img { height:23px; }
 
@@ -200,7 +200,7 @@ a { display:block; text-decoration:none; }
 
     /** pagination **/
     .container #main .page { margin-bottom:170px; }
-        .container #main .page ul li { font-size:1.5em; margin:0 25px; }
+        .container #main .page ul li { font-size:1.5em; padding:0 25px; }
 
 
     /*** scroll top ***/
