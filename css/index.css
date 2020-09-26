@@ -470,7 +470,7 @@ body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; fo
 
 
     /*** footer ***/
-    .container footer { padding:50px 0; box-sizing:border-box; font-size:1.1em; }
+    .container footer { padding:25px 0; box-sizing:border-box; font-size:0.9em; }
         .container footer p { text-align:center; }
         .container footer p:first-of-type { font-size:1.75em; }
         .container footer p:nth-of-type(2) { margin-top:0; }
