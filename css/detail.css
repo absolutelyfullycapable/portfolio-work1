@@ -236,7 +236,8 @@ a { display:block; text-decoration:none; }
             .container #main .info .swiper-pagination { padding:0 0 30px 55px; }
 
         /** info txt **/
-        .container #main .info_txt { width:45%; height:100%; padding:5% 10% 0; position:fixed; top:0; right:0; display:flex; justify-content:center; align-items:center; }
+        .container #main .info_txt { width:45%; height:100%; padding:5% 10% 0; position:fixed; bottom:0; right:0; display:flex; justify-content:center; align-items:center; }
+        .container #main .info_txt.fix { height:100vh; position:absolute; bottom:0; right:0; height:100vh; margin-bottom:200px; }
 
             .container #main .info_txt ul li:first-child { font-size:1.7em; }
             .container #main .info_txt ul li:first-child .discount { width:75px; height:75px; left:350px; }
