@@ -130,30 +130,41 @@ $(function() {
     speed: 2000
   });
 
-  // 장바구니 추가 버튼 클릭 시 '장바구니에 추가되었습니다.' 알림 송출
-  $('#buy ul li').eq(1).on('click', function() {
-      alert('장바구니에 추가되었습니다.');
-  });
+    // 장바구니 추가 버튼 클릭 시 '장바구니에 추가되었습니다.' 알림 송출
+    $('#buy ul li').eq(1).on('click', function() {
+        alert('장바구니에 추가되었습니다.');
+    });
+    $('.info_txt .cart').on('click', function() {
+        alert('장바구니에 추가되었습니다.');
+    });
 
-  // 리뷰 작성하기 클릭 시 '로그인이 필요합니다.' 알림 송출
-  $('#reviews > a').on('click', function() {
-      alert('로그인이 필요합니다.');
-  });
+    // 지금 구매하기, 리뷰 작성하기 클릭 시 '로그인이 필요합니다.' 알림 송출
+    $('#buy ul li').eq(2).on('click', function() {
+        alert('로그인이 필요합니다.');
+    });
 
-  // 리뷰 최신순 | 추천순 애니메이션
-  $('#reviews > ul li').on('click', function() {
-      $(this).siblings('li').removeClass('click');
-      $(this).addClass('click');
-  });
+    $('.info_txt .cart').next('div').on('click', function() {
+        alert('로그인이 필요합니다.');
+    });
 
-  // 리뷰 더 보기 클릭 시 숨어 있던 리뷰들 나타남
-  $('#reviews > div').eq(2).css('border-bottom', 'none').nextAll('div').hide();
-  $('#reviews img').on('click', function() {
-    $('#reviews > div').eq(2).css('border-bottom', '1px solid rgba(122, 102, 76, 0.5)').nextAll('div').slideDown();
-    // 숨어 있던 리뷰들 말줄임 플러그인
+    $('#reviews > a').on('click', function() {
+        alert('로그인이 필요합니다.');
+    });
+
+    // 리뷰 최신순 | 추천순 애니메이션
+    $('#reviews > ul li').on('click', function() {
+        $(this).siblings('li').removeClass('click');
+        $(this).addClass('click');
+    });
+
+    // 리뷰 더 보기 클릭 시 숨어 있던 리뷰들 나타남
+    $('#reviews > div').eq(2).css('border-bottom', 'none').nextAll('div').hide();
+    $('#reviews img').on('click', function() {
+        $('#reviews > div').eq(2).css('border-bottom', '1px solid rgba(122, 102, 76, 0.5)').nextAll('div').slideDown();
+        // 숨어 있던 리뷰들 말줄임 플러그인
+        $('#reviews > div .txt').dotdotdot();
+    });
+
+    // review 말줄임 플러그인
     $('#reviews > div .txt').dotdotdot();
-  });
-
-  // review 말줄임 플러그인
-  $('#reviews > div .txt').dotdotdot();
 });
