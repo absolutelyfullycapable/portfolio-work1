@@ -243,7 +243,7 @@ a { display:block; text-decoration:none; }
             .container #main .info_txt ul li:first-child { font-size:1.7em; }
             .container #main .info_txt ul li:first-child .discount { width:75px; height:75px; left:350px; }
 
-            .container #main .info_txt ul li:nth-child(2) { padding:10px 0 40px; font-size:1.6em; }
+            .container #main .info_txt ul li:nth-child(2) { padding:10px 0 40px 4px; font-size:1.6em; }
 
             .container #main .info_txt ul li:nth-child(3) { font-size:1.05em; padding:40px 0; }
 
