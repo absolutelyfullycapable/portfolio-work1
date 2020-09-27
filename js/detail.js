@@ -80,7 +80,7 @@ $(function() {
             var scrollT = $(window).scrollTop();
             if (scrollT >= 100) {
                 $('#scroll_btn').stop().animate({
-                    bottom: 75
+                    bottom: 65
                 }, 600);
             } else {
                 $('#scroll_btn').stop().animate({
