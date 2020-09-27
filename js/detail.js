@@ -130,6 +130,11 @@ $(function() {
     speed: 2000
   });
 
+  // 장바구니 추가 버튼 클릭 시 '장바구니에 추가되었습니다.' 알림 송출
+  $('#buy ul li').eq(1).on('click', function() {
+      alert('장바구니에 추가되었습니다.');
+  });
+
   // 리뷰 최신순 | 추천순 애니메이션
   $('#reviews > ul li').on('click', function() {
       $(this).siblings('li').removeClass('click');
