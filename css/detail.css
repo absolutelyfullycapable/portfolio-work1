@@ -243,14 +243,18 @@ a { display:block; text-decoration:none; }
             .container #main .info_txt ul li:first-child { font-size:1.7em; }
             .container #main .info_txt ul li:first-child .discount { width:75px; height:75px; left:350px; }
 
-            .container #main .info_txt ul li:nth-child(2) { padding:40px 0; font-size:1.6em; }
+            .container #main .info_txt ul li:nth-child(2) { padding:10px 0 40px; font-size:1.6em; }
 
-            .container #main .info_txt ul li:nth-child(3) { font-size:1.05em; padding:30px 0; }
+            .container #main .info_txt ul li:nth-child(3) { font-size:1.05em; padding:40px 0; }
+
+            .container #main .info_txt ul li:nth-child(4) { margin-bottom:40px; }
             
-            .container #main .info_txt ul li:nth-child(5) { display:flex; margin-bottom:50px; }
+            .container #main .info_txt ul li:nth-child(5) { display:flex; margin-bottom:40px; }
             .container #main .info_txt ul li:nth-child(5) div { width:45%; height:60px; text-align:center; line-height:60px; cursor:pointer; }
                 .container #main .info_txt ul li:nth-child(5) .cart { margin-right:5%; border:1px solid #3a3123; color:#3a3123; }
                 .container #main .info_txt ul li:nth-child(5) div:last-of-type { margin-left:5%; background-color:#3a3123; color:#fcfcfc; }
+
+            .container #main .info_txt ul li:nth-child(6) { margin-bottom:20px; }
 
         /** more info **/
         .container #main .more_info { width:55%; margin-top:100vh; }
