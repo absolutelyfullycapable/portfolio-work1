@@ -79,18 +79,18 @@ a { display:block; text-decoration:none; }
             .container #banner .banner_box div p { text-align:center; margin-top:20px; line-height:1.5; font-weight:300; color:#222; }
         
         /* first banner */
-        .container #banner .banner_box .banner1 { width:33.333333%; height:100%; background:url(../images/banner1.jpg) no-repeat 70% 80%; background-size:1283px; }
+        .container #banner .banner_box .banner1 { width:33.333333%; height:100%; background:url(../images/banner1.jpg) no-repeat 70% 60%; background-size:1283px; }
             .container #banner .banner_box .banner1 .txt p { padding:0 35px; box-sizing:border-box; }
 
         /* second banner */
-        .container #banner .banner_box .banner2 { width:33.333333%; height:100%; background:url(../images/banner2.jpg) no-repeat 70% 100%; background-size:1283px; }
-            .container #banner .banner_box .banner2 .txt { top:50%; }
+        .container #banner .banner_box .banner2 { width:33.333333%; height:100%; background:url(../images/banner2.jpg) no-repeat 60% 90%; background-size:1283px; }
+            .container #banner .banner_box .banner2 .txt { top:55%; }
             .container #banner .banner_box .banner2 .txt h3 { color:#edebe2; }
             .container #banner .banner_box .banner2 .txt p { padding:0 45px; box-sizing:border-box; }
 
         /* third banner */
         .container #banner .banner_box .banner3 { width:33.333333%; height:100%; background:url(../images/banner3.jpg) no-repeat 70% 100%; background-size:1283px; }
-            .container #banner .banner_box .banner3 .txt { top:10%; }
+            .container #banner .banner_box .banner3 .txt { top:15%; }
             .container #banner .banner_box .banner3 .txt h3 { font-size:1.6875em; }
             .container #banner .banner_box .banner3 .txt p { padding:0 55px; box-sizing:border-box; }
 
