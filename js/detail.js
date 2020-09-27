@@ -167,4 +167,16 @@ $(function() {
 
     // review 말줄임 플러그인
     $('#reviews > div .txt').dotdotdot();
+
+    // PC 화면에서 .info_txt 제어
+    $(window).on('scroll', function() {
+        const scr = $(window).scrollTop();
+        const ht = $('.more_info .img2').offset().top;
+        
+        if(scr >= ht) {
+            $('.info_txt').addClass('fix');
+        } else {
+            $('.info_txt').removeClass('fix');
+        }
+    });
 });
