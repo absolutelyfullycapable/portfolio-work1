@@ -11,7 +11,7 @@
 - **제품 상세 페이지** - 제품 클릭 시 제품과 무관하게 전부 '데일리 세트 (Daily Set)' 상세 페이지로 이동합니다.
 
 ### production period
-- 2020.09.16 - 2020.09.00
+- 2020.09.16 - 2020.09.27
 
 ### degree of participation
 - 100% (Design, Publishing, etc)
