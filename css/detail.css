@@ -78,20 +78,21 @@ a { display:block; text-decoration:none; }
 
     /** info txt **/
     .container #main .info_txt { width:100%; padding:50px 5%; box-sizing:border-box; background-color:#f8f8f8; }
-        .container #main .info_txt li:first-child { font-size:1.2em; letter-spacing:0; position:relative; color:#3a3123; }
-            .container #main .info_txt li:first-child h2 { font-weight:400; margin:0; position:relative; z-index:9; }
-            .container #main .info_txt li:first-child span { font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; }
-            .container #main .info_txt li:first-child .discount { width:50px; height:50px; border-radius:50%; background-color:#d39d67; font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-size:1.2em; display:flex; justify-content:center; align-items:center; color:#fff; position:absolute; top:-60%; left:250px; z-index:1; }
+        .container #main .info_txt ul li:first-child { font-size:1.2em; letter-spacing:0; position:relative; color:#3a3123; }
+            .container #main .info_txt ul li:first-child h2 { font-weight:400; margin:0; position:relative; z-index:9; }
+            .container #main .info_txt ul li:first-child span { font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; }
+            .container #main .info_txt ul li:first-child .discount { width:50px; height:50px; border-radius:50%; background-color:#d39d67; font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-size:1.2em; display:flex; justify-content:center; align-items:center; color:#fff; position:absolute; top:-60%; left:250px; z-index:1; }
         
-        .container #main .info_txt li:nth-child(2) { padding:20px 0 40px; box-sizing:border-box; font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-size:1.3em; border-bottom:1px solid #3a3123;  }
-            .container #main .info_txt li:nth-child(2) em { font-style:normal; text-decoration:line-through; color:#939393; }
-            .container #main .info_txt li:nth-child(2) span { font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; }
+        .container #main .info_txt ul li:nth-child(2) { padding:20px 0 40px; box-sizing:border-box; font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-size:1.3em; border-bottom:1px solid #3a3123;  }
+            .container #main .info_txt ul li:nth-child(2) em { font-style:normal; text-decoration:line-through; color:#939393; }
+            .container #main .info_txt ul li:nth-child(2) span { font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; }
 
-        .container #main .info_txt li:nth-child(3) { padding:35px 0 50px; box-sizing:border-box; line-height:2; letter-spacing:-0.7px; text-align:justify; }
+        .container #main .info_txt ul li:nth-child(3) { padding:35px 0 50px; box-sizing:border-box; line-height:2; letter-spacing:-0.7px; text-align:justify; }
 
-        .container #main .info_txt li:nth-child(4), .container #main .info_txt li:nth-child(5),.container #main .info_txt li:nth-child(6), .container #main .info_txt li:last-child { font-size:1.1em; margin-bottom:30px; cursor:pointer; }
-        .container #main .info_txt li:nth-child(4) { font-weight:400; color:#3a3123; }
-        .container #main .info_txt li:nth-child(5) a, .container #main .info_txt li:nth-child(6) a { color:#686868; }
+        .container #main .info_txt ul li:nth-child(4),.container #main .info_txt ul li:nth-child(6), .container #main .info_txt ul li:last-child { margin-bottom:30px; cursor:pointer; }
+        .container #main .info_txt ul li:nth-child(4) { font-size:1.1em; font-weight:400; color:#3a3123; }
+        .container #main .info_txt ul li:nth-child(5) { display:none; }
+        .container #main .info_txt ul li:nth-child(6), .container #main .info_txt ul li:last-child { color:#686868; }
 
     /** more info **/
     .container #main .more_info { width:100%; }
@@ -216,9 +217,45 @@ a { display:block; text-decoration:none; }
         .container #PC_header.up h1 a { padding:20px 0; background-size:100px; }
 
     
-    /** search **/
+    /*** search ***/
     .container #search_box { width:20%; top:110px; right:7.5%; box-shadow:0 0 10px rgba(0, 0, 0, 0.1); transition:0.5s; opacity:0; }
     .container #search_box.act { top:85px; width:20%; right:250px; box-shadow:none; }
+
+
+    /*** main ***/
+    .container #main { display:flex; flex-direction:column; position:relative; }
+
+        /** info **/
+        .container #main .info { width:55%; height:100vh; position:absolute; top:0; left:0; }
+            .container #main .info .daily_set1 { width:100%; height:100%; background:url(../images/dailySet1.png) no-repeat 70% 40%; background-size:730px; padding:0 45px; box-sizing:border-box; }
+            .container #main .info .daily_set2 { width:100%; height:100%; background:url(../images/dailySet2.png) no-repeat 70% 20%; background-size:730px; padding:0 45px; box-sizing:border-box; }
+            .container #main .info .swiper-pagination { padding:0 0 30px 55px; }
+
+        /** info txt **/
+        .container #main .info_txt { width:45%; height:100%; padding:5% 10% 0; position:fixed; top:0; right:0; display:flex; justify-content:center; align-items:center; }
+
+            .container #main .info_txt ul li:first-child { font-size:1.7em; }
+            .container #main .info_txt ul li:first-child .discount { width:75px; height:75px; left:350px; }
+
+            .container #main .info_txt ul li:nth-child(2) { padding:40px 0; font-size:1.6em; }
+
+            .container #main .info_txt ul li:nth-child(3) { font-size:1.05em; padding:30px 0; }
+            
+            .container #main .info_txt ul li:nth-child(5) { display:flex; margin-bottom:50px; }
+            .container #main .info_txt ul li:nth-child(5) div { width:45%; height:60px; text-align:center; line-height:60px; cursor:pointer; }
+                .container #main .info_txt ul li:nth-child(5) .cart { margin-right:5%; border:1px solid #3a3123; color:#3a3123; }
+                .container #main .info_txt ul li:nth-child(5) div:last-of-type { margin-left:5%; background-color:#3a3123; color:#fcfcfc; }
+
+        /** more info **/
+        .container #main .more_info { width:55%; margin-top:100vh; }
+            
+            /* image section */
+            .container #main .more_info .img1 { width:100%; height:110vh; background:url(../images/productDetail1.jpg) no-repeat 50% 90%; background-size:cover; }
+            .container #main .more_info .img2 { width:100%; height:115vh; background:url(../images/productDetail2.png) no-repeat 50% 60%; background-size:cover; margin-bottom:110px; }
+
+
+    /*** buy ***/
+    .container #buy { display:none; } 
 
 
     /*** scroll top ***/
