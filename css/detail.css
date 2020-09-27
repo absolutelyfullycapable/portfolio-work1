@@ -96,53 +96,57 @@ a { display:block; text-decoration:none; }
 
     /** more info **/
     .container #main .more_info { width:100%; }
-        .container #main .more_info h2 { font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-weight:normal; text-align:center; font-size:1.7em; border-bottom:1px solid #3a3123; color:#3a3123; margin:0 5%; padding-bottom:20px; box-sizing:border-box; }
         
         /* image section */
         .container #main .more_info .img1 { width:100%; height:55vh; background:url(../images/productDetail1.jpg) no-repeat 50% 90%; background-size:cover; }
         .container #main .more_info .img2 { width:100%; height:57vh; background:url(../images/productDetail2.png) no-repeat 50% 60%; background-size:cover; margin-bottom:110px; }
 
-        /* about, use */
-        .container #main .more_info #about, .container #main .more_info #use { width:100%; margin-bottom:165px; }
-            .container #main .more_info #about span, .container #main .more_info #use span { font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; }
-            .container #main .more_info #about strong,.container #main .more_info #use strong  { font-weight:400; }
-            .container #main .more_info #about p, .container #main .more_info #use p { margin:60px 5%; box-sizing:border-box; letter-spacing:-0.5px; line-height:2; color:#222; text-align:justify; }
 
-        /* review */
-        .container #main .more_info #reviews { width:100%; }
+/*** sub main ***/ 
+    .container #sub_main { width:100%; }
+    .container #sub_main h2 { font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-weight:normal; text-align:center; font-size:1.7em; border-bottom:1px solid #3a3123; color:#3a3123; margin:0 5%; padding-bottom:20px; box-sizing:border-box; }
 
-            /* review 작성 버튼 */
-            .container #main .more_info #reviews a { margin:50px auto; padding:10px 0; width:320px; border:1px solid #3a3123; color:#3a3123; text-align:center; transition:0.2s; }
-            .container #main .more_info #reviews a:hover,.container #main .more_info #reviews a:active { background-color:#3a3123; color:#fff; }
+    /* about, use */
+    .container #sub_main #about, .container #sub_main #use { width:100%; margin-bottom:165px; }
+        .container #sub_main #about span, .container #sub_main #use span { font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; }
+        .container #sub_main #about strong,.container #sub_main #use strong  { font-weight:400; }
+        .container #sub_main #about p, .container #sub_main #use p { margin:60px 5%; box-sizing:border-box; letter-spacing:-0.5px; line-height:2; color:#222; text-align:justify; }
+
+    /* review */
+    .container #sub_main #reviews { width:100%; }
+
+        /* review 작성 버튼 */
+        .container #sub_main #reviews a { margin:50px auto; padding:10px 0; width:320px; border:1px solid #3a3123; color:#3a3123; text-align:center; transition:0.2s; }
+        .container #sub_main #reviews a:hover,.container #sub_main #reviews a:active { background-color:#3a3123; color:#fff; }
             
-            .container #main .more_info #reviews > ul { display:flex; justify-content:center; align-items:center; margin-bottom:50px; color:#594c3aaf; }
-                .container #main .more_info #reviews ul li { cursor:pointer; }
-                .container #main .more_info #reviews > ul li.click { font-weight:400; color:#3a3123; }
-                .container #main .more_info #reviews > ul li:first-child::after { content:"|"; margin:0 30px; color:#594c3a; }
+        .container #sub_main #reviews > ul { display:flex; justify-content:center; align-items:center; margin-bottom:50px; color:#594c3aaf; }
+            .container #sub_main #reviews ul li { cursor:pointer; }
+            .container #sub_main #reviews > ul li.click { font-weight:400; color:#3a3123; }
+            .container #sub_main #reviews > ul li:first-child::after { content:"|"; margin:0 30px; color:#594c3a; }
 
-            /* 작성된 review */
-            .container #main .more_info #reviews > div { padding:50px 0; margin:0 5%; box-sizing:border-box; display:flex; border-bottom:1px solid rgba(122, 102, 76, 0.5); color:#222; }
-            .container #main .more_info #reviews > div ul { margin-right:50px; line-height:1.7; }
-            .container #main .more_info #reviews > div ul li:last-child { margin-top:25px; color:rgba(34, 34, 34, 0.5); }
-            .container #main .more_info #reviews > div .txt { height:100px; line-height:1.7; }
+        /* 작성된 review */
+        .container #sub_main #reviews > div { padding:50px 0; margin:0 5%; box-sizing:border-box; display:flex; border-bottom:1px solid rgba(122, 102, 76, 0.5); color:#222; }
+        .container #sub_main #reviews > div ul { margin-right:50px; line-height:1.7; }
+        .container #sub_main #reviews > div ul li:last-child { margin-top:25px; color:rgba(34, 34, 34, 0.5); }
+        .container #sub_main #reviews > div .txt { height:100px; line-height:1.7; }
 
-            .container #main .more_info #reviews .review1 { padding-top:0; }
-            .container #main .more_info #reviews .review6 { border:none; }
+        .container #sub_main #reviews .review1 { padding-top:0; }
+        .container #sub_main #reviews .review6 { border:none; }
 
-            .container #main .more_info #reviews img { width:45px; display:block; margin:0 auto 30px; cursor: pointer; }
-            .container #main .more_info #reviews p { text-align:center; }
+        .container #sub_main #reviews img { width:45px; display:block; margin:0 auto 30px; cursor: pointer; }
+        .container #sub_main #reviews p { text-align:center; }
         
-        /** recommend **/
-        .container #main .more_info #recommend { margin:165px 0 150px; text-align:center; }
-            .container #main .more_info #recommend .products { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; }
-            .container #main .more_info #recommend .products > div { margin:80px 5px 0; }
-            .container #main .more_info #recommend .products > div ul li:nth-child(2) { margin-top:20px; color:#222; }
-            .container #main .more_info #recommend .products > div ul li a { margin:40px auto 0; padding:10px 0; box-sizing:border-box; width:150px; border:1px solid #3a3123; color:#3a3123; transition:0.2s; }
-            .container #main .more_info #recommend .products > div ul li a:hover { background-color:#3a3123; color:#fff; }
-            .container #main .more_info #recommend > div img { width:240px; }
+    /** recommend **/
+    .container #sub_main #recommend { margin:165px 0 150px; text-align:center; }
+        .container #sub_main #recommend .products { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; }
+        .container #sub_main #recommend .products > div { margin:80px 5px 0; }
+        .container #sub_main #recommend .products > div ul li:nth-child(2) { margin-top:20px; color:#222; }
+        .container #sub_main #recommend .products > div ul li a { margin:40px auto 0; padding:10px 0; box-sizing:border-box; width:150px; border:1px solid #3a3123; color:#3a3123; transition:0.2s; }
+        .container #sub_main #recommend .products > div ul li a:hover { background-color:#3a3123; color:#fff; }
+            .container #sub_main #recommend > div img { width:240px; }
 
     
-/** sub menu **/
+/*** sub menu ***/
 .container #sub_menu { margin:0 5%; border-top:1px solid #3a3123; }
     .container #sub_menu ul { margin:35px 0; display:flex; flex-wrap:wrap; justify-content:center; align-items:center; font-weight:400; font-size:1.1em; color:#222; }
         .container #sub_menu ul li { width:100px; margin:15px 25px; text-align:center; }
@@ -252,6 +256,8 @@ a { display:block; text-decoration:none; }
             /* image section */
             .container #main .more_info .img1 { width:100%; height:110vh; background:url(../images/productDetail1.jpg) no-repeat 50% 90%; background-size:cover; }
             .container #main .more_info .img2 { width:100%; height:115vh; background:url(../images/productDetail2.png) no-repeat 50% 60%; background-size:cover; margin-bottom:110px; }
+
+            .container #main .more_info #about { width:100vw; }
 
 
     /*** buy ***/
