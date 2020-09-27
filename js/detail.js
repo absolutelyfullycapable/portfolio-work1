@@ -146,6 +146,14 @@ $(function() {
       $(this).addClass('click');
   });
 
+  // 리뷰 더 보기 클릭 시 숨어 있던 리뷰들 나타남
+  $('#reviews > div').eq(2).css('border-bottom', 'none').nextAll('div').hide();
+  $('#reviews img').on('click', function() {
+    $('#reviews > div').eq(2).css('border-bottom', '1px solid rgba(122, 102, 76, 0.5)').nextAll('div').slideDown();
+    // 숨어 있던 리뷰들 말줄임 플러그인
+    $('#reviews > div .txt').dotdotdot();
+  });
+
   // review 말줄임 플러그인
   $('#reviews > div .txt').dotdotdot();
 });
