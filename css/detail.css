@@ -68,16 +68,16 @@ a { display:block; text-decoration:none; }
 
 
 /*** main ***/
-.container #main { width:100%; }
+.container #main { width:100%; background-color:#f8f8f8; }
 
     /** info **/
-    .container #main .info { width:100%; background-color:#f8f8f8; padding-top:90px; box-sizing:border-box; }
+    .container #main .info { width:100%; padding-top:90px; box-sizing:border-box; }
         .container #main .info .daily_set1 { height:400px; background:url(../images/dailySet1.png) no-repeat 50% 40%; background-size:300px; padding:0 45px; box-sizing:border-box; }
         .container #main .info .daily_set2 { height:400px; background:url(../images/dailySet2.png) no-repeat 50% 20%; background-size:330px; padding:0 45px; box-sizing:border-box; }
         .container #main .info .swiper-pagination { padding-top:30px; }
 
     /** info txt **/
-    .container #main .info_txt { width:100%; padding:50px 5%; box-sizing:border-box; background-color:#f8f8f8; }
+    .container #main .info_txt { width:100%; padding:50px 5%; box-sizing:border-box; }
         .container #main .info_txt ul li:first-child { font-size:1.2em; letter-spacing:0; position:relative; color:#3a3123; }
             .container #main .info_txt ul li:first-child h2 { font-weight:400; margin:0; position:relative; z-index:9; }
             .container #main .info_txt ul li:first-child span { font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; }
@@ -99,11 +99,11 @@ a { display:block; text-decoration:none; }
         
         /* image section */
         .container #main .more_info .img1 { width:100%; height:55vh; background:url(../images/productDetail1.jpg) no-repeat 50% 90%; background-size:cover; }
-        .container #main .more_info .img2 { width:100%; height:57vh; background:url(../images/productDetail2.png) no-repeat 50% 60%; background-size:cover; margin-bottom:110px; }
+        .container #main .more_info .img2 { width:100%; height:57vh; background:url(../images/productDetail2.png) no-repeat 50% 60%; background-size:cover; }
 
 
 /*** sub main ***/ 
-    .container #sub_main { width:100%; }
+    .container #sub_main { width:100%; margin-top:110px; }
     .container #sub_main h2 { font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-weight:normal; text-align:center; font-size:1.7em; border-bottom:1px solid #3a3123; color:#3a3123; margin:0 5%; padding-bottom:20px; box-sizing:border-box; }
 
     /* about, use */
@@ -237,7 +237,7 @@ a { display:block; text-decoration:none; }
 
         /** info txt **/
         .container #main .info_txt { width:45%; height:100%; padding:5% 10% 0; position:fixed; bottom:0; right:0; display:flex; justify-content:center; align-items:center; }
-        .container #main .info_txt.fix { height:100vh; position:absolute; bottom:0; right:0; height:100vh; margin-bottom:200px; }
+        .container #main .info_txt.fix { height:100vh; position:absolute; bottom:0; right:0; height:100vh; }
 
             .container #main .info_txt ul li:first-child { font-size:1.7em; }
             .container #main .info_txt ul li:first-child .discount { width:75px; height:75px; left:350px; }
@@ -256,11 +256,11 @@ a { display:block; text-decoration:none; }
             
             /* image section */
             .container #main .more_info .img1 { width:100%; height:110vh; background:url(../images/productDetail1.jpg) no-repeat 50% 90%; background-size:cover; }
-            .container #main .more_info .img2 { width:100%; height:115vh; background:url(../images/productDetail2.png) no-repeat 50% 60%; background-size:cover; margin-bottom:200px; }
+            .container #main .more_info .img2 { width:100%; height:115vh; background:url(../images/productDetail2.png) no-repeat 50% 60%; background-size:cover; }
 
     
     /*** sub main ***/
-    .container #sub_main { width:100%; display:flex; flex-wrap:wrap; justify-content:center; }
+    .container #sub_main { width:100%; display:flex; flex-wrap:wrap; justify-content:center; margin-top:200px; }
         .container #sub_main h2 { font-size:2.5em; padding-bottom:30px; }
 
     .container #sub_main #about, .container #sub_main #use { width:42%; margin-bottom:200px; }
