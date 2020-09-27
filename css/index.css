@@ -71,7 +71,7 @@ a { display:block; text-decoration:none; }
     .container #banner { width:100%; height:100%; position:relative; }
         .container #banner .banner_box { width:300%; height:100%; display:flex; }
 
-        .container #banner .banner_box div .txt { position:relative; top:60%;  padding:10px 0; box-sizing:border-box; }
+        .container #banner .banner_box div .txt { position:relative; padding:10px 0; box-sizing:border-box; }
             .container #banner .banner_box h2, .container #banner .banner_box h3, .container #banner .banner_box p { margin:0; font-weight:normal; text-align:center; }
 
             .container #banner .banner_box h2 { font-size:2.1875em; font-weight:400; letter-spacing:2px; position: relative; z-index:9; }
@@ -80,6 +80,7 @@ a { display:block; text-decoration:none; }
         
         /* first banner */
         .container #banner .banner_box .banner1 { width:33.333333%; height:100%; background:url(../images/banner1.jpg) no-repeat 70% 60%; background-size:1283px; }
+            .container #banner .banner_box .banner1 .txt { top:55%; }
             .container #banner .banner_box .banner1 .txt p { padding:0 35px; box-sizing:border-box; }
 
         /* second banner */
