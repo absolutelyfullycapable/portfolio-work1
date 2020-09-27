@@ -135,6 +135,11 @@ $(function() {
       alert('장바구니에 추가되었습니다.');
   });
 
+  // 리뷰 작성하기 클릭 시 '로그인이 필요합니다.' 알림 송출
+  $('#reviews > a').on('click', function() {
+      alert('로그인이 필요합니다.');
+  });
+
   // 리뷰 최신순 | 추천순 애니메이션
   $('#reviews > ul li').on('click', function() {
       $(this).siblings('li').removeClass('click');
