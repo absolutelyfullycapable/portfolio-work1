@@ -36,29 +36,28 @@ $(function () {
         }
     })
 
-    // 모바일, 태블릿 화면에서 검색 아이콘 클릭 시 검색창 보임
-    $('.search').on('click', function () {
-        $('#search_box').stop().animate({
-            top: 0
-        }, 1000, 'easeOutCubic');
-    });
-
-    // PC 화면에서 검색 아이콘 클릭 시 검색창 보임
-    $('#PC_header .menu2 a').on('click', function() {
-        $('.container #search_box').stop().animate({ opacity: 1 }, 300);
-    });
-
-    // 검색창 내 X 버튼 클릭 시 검색창 사라짐
     var wd = $(window).width();
+    if(wd > 0 && wd < 1440) { // 모바일, 태블릿 화면에서 검색 아이콘 클릭 시 검색창 보임
+        $('.search').on('click', function () {
+            $('#search_box').stop().animate({
+                top: 0
+            }, 1000, 'easeOutCubic');
+        });
+    } else { // PC 화면에서 검색 아이콘 클릭 시 검색창 보임
+        $('#PC_header .menu2 a').on('click', function() {
+            $('.container #search_box').stop().animate({height: 180}, 500);
+        });
+    }
+    
+    // 검색창 내 X 버튼 클릭 시 검색창 사라짐
     $('#search_box svg').on('click', function () {    
         if(wd > 0 && wd < 1400) {
             $('#search_box').animate({
                 top: -230
             }, 1000, 'easeOutCubic');
         } else {
-            $('.container #search_box').stop().animate({ opacity: 0 }, 300);
+            $('.container #search_box').stop().animate({height: 0}, 500);
         }
-        
     });
 
     // 배너 자동 슬라이드
