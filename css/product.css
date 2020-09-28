@@ -87,7 +87,7 @@ a { display:block; text-decoration:none; }
         .container #main .products a { padding:0 17px; margin-bottom:110px; box-sizing:border-box; color:#222; }
                 .container #main .products ul .img { height:340px; margin-bottom:50px;  position:relative; overflow:hidden; }
                     .container #main .products ul .img img { display:block; width:340px;  }
-                    .container #main .products ul .img .cart { width:40px; height:40px; border-radius:50%; background:#d39d67 url(../images/cart.svg) 50% 50% no-repeat; background-size:23px; position:absolute; bottom:-100px; right:10px; }
+                    .container #main .products ul .img .cart { width:40px; height:40px; border-radius:50%; background:#d39d67 url(../images/cart.svg) 50% 50% no-repeat; background-size:23px; position:absolute; bottom:10px; right:10px; }
                 .container #main .products ul li:nth-child(2) { font-size:1.1em; font-weight:400; margin-bottom:20px; }
                 .container #main .products ul li:last-child { font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-size:1.05em; color:#3a3123; }
                 .container #main .products ul li:last-child span { font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; }
