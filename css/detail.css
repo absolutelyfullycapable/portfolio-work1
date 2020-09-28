@@ -196,6 +196,9 @@ a { display:block; text-decoration:none; }
     .container .popup h2 { font-weight:400; margin:0; font-size:1.4em; margin-bottom:20px; }
     .container .popup p { line-height:2; font-size:1.1em; }
     .container .popup ul li { list-style:inside; margin-bottom:10px; line-height:1.7; font-size:1.1em; }
+
+.container #popup2 { height:33%; }
+.container #popup3 { height:55%; }
     
 
 /*** footer ***/
@@ -355,7 +358,7 @@ a { display:block; text-decoration:none; }
     .container #scroll_btn { width:55px; height:55px; bottom:-60px; right:30px; }
 
     /*** popup ***/
-    .container .popup { width:40%; height:30%; }
+    .container #popup1, .container #popup2, .container #popup3 { width:40%; height:30%; }
 
     /*** footer ***/
     .container footer { padding:50px 0; box-sizing:border-box; font-size:0.9em; }
