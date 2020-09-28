@@ -106,7 +106,7 @@ a { display:block; text-decoration:none; }
             .container #main .page ul li:first-child, .container #main .page ul li:last-child { display:flex; justify-content:center; align-items:center; }
 
 /*** footer ***/
-.container footer { width:100%; background-color:#50512d; padding:40px 28px 100px; box-sizing:border-box; font-size:0.875em; }
+.container footer { width:100%; background-color:#50512d; padding:40px 28px; box-sizing:border-box; font-size:0.875em; }
     .container footer p { margin:0; color:#969687; line-height:1.7; letter-spacing:0; }
     .container footer p:first-of-type { font-family:'Kumbh Sans','Apple SD Gothic Neo', sans-serif; font-weight:400; font-size:1.563em; color:#cccbaa; }
     .container footer p:nth-of-type(2) { font-family:'Kumbh Sans','Apple SD Gothic Neo', sans-serif; color:#cccbaa; }
