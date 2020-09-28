@@ -195,9 +195,10 @@ a { display:block; text-decoration:none; }
 .container .popup img { position:absolute; top:20px; right:20px; width:20px; height:20px; cursor:pointer; }
     .container .popup h2 { font-weight:400; margin:0; font-size:1.4em; margin-bottom:20px; }
     .container .popup p { line-height:2; font-size:1.1em; }
-    .container .popup ul li { list-style:inside; margin-bottom:10px; line-height:1.7; }
+    .container .popup ul li { list-style:inside; margin-bottom:10px; line-height:1.7; font-size:1.1em; }
 
-.container #popup2 { height:31%; }
+.container #popup2 { height:33%; }
+.container #popup3 { height:55%; }
     
 
 /*** footer ***/
