@@ -137,15 +137,17 @@ $(function() {
         alert('장바구니에 추가되었습니다.');
     });
 
-    // 지금 구매하기, 리뷰 작성하기 클릭 시 '로그인이 필요합니다.' 알림 송출
+    // 모바일 화면에서 구매하기 버튼 클릭 시 수량 화면 위로
     $('#buy ul li').eq(2).on('click', function() {
-        alert('로그인이 필요합니다.');
+        $('#pay').animate({bottom: 50}, 700);
     });
 
-    $('.info_txt .cart').next('div').on('click', function() {
-        alert('로그인이 필요합니다.');
+    // 수량 화면 내 X 버튼 클릭 시 화면 다시 밑으로
+    $('#pay > img').on('click', function() {
+        $('#pay').animate({bottom: -400}, 700);
     });
 
+    // 리뷰 작성하기 클릭 시 '로그인이 필요합니다.' 알림 송출
     $('#reviews > a').on('click', function() {
         alert('로그인이 필요합니다.');
     });
