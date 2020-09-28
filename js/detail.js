@@ -72,24 +72,18 @@ $(function() {
        }
    });
 
-   // 모든 디바이스에서 스크롤 시 숨어 있던 #scroll_btn, 모바일, 태블릿 화면에서 구매하기 버튼 보임
+   // 스크롤 시 숨어 있던 #scroll_btn 버튼 보임
    $(window).scroll(function () {
         var wt = $(window).width();
         if (wt > 0 && wt < 1440) {
             var scrollT = $(window).scrollTop();
-            if (scrollT >= 1000) {
+            if (scrollT >= 100) {
                 $('#scroll_btn').stop().animate({
                     bottom: 65
-                }, 600);
-                $('#buy').stop().animate({
-                    bottom: 0
                 }, 600);
             } else {
                 $('#scroll_btn').stop().animate({
                     bottom: -175
-                }, 600);
-                $('#buy').stop().animate({
-                    bottom: -50
                 }, 600);
             }
         } else {
