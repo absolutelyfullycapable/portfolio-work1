@@ -147,6 +147,25 @@ $(function() {
         $('#pay').animate({bottom: -400}, 700);
     });
 
+    // 상품 정보, 판매 정책, 배송 정보 클릭하면 각각 맞는 팝업 뜸
+    $('.info_txt ul > li').eq(3).on('click', function() {
+        $('#popup1').css('display', 'block');
+    });
+
+    $('.info_txt ul > li:nth-child(7)').on('click', function() {
+        $('#popup2').css('display', 'block');
+    });
+
+    $('.info_txt ul > li:nth-child(8)').on('click', function() {
+        $('#popup3').css('display', 'block');
+    });
+
+    // 팝업창 내부 X 버튼 클릭 시 팝업창 닫힘
+    $('.popup img').on('click', function() {
+        $('.popup').css('display', 'none');
+    });
+
+
     // 리뷰 작성하기 클릭 시 '로그인이 필요합니다.' 알림 송출
     $('#reviews > a').on('click', function() {
         alert('로그인이 필요합니다.');
