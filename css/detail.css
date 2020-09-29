@@ -191,13 +191,13 @@ a { display:block; text-decoration:none; }
         
 
 /*** popup ***/
-.container .popup { position:fixed; z-index:9; top:50%; right:50%; transform:translate(50%, -50%); border:1px solid #54473794; background-color:#fff; width:75%; height:50%; padding:30px; overflow:auto; font-size:0.9em; display:none; }
+.container .popup { position:fixed; z-index:9; top:50%; right:50%; transform:translate(50%, -50%); border:1px solid #54473794; background-color:#fff; width:75%; height:330px; padding:30px; overflow:auto; font-size:0.9em; display:none; }
 .container .popup img { position:absolute; top:20px; right:20px; width:20px; height:20px; cursor:pointer; }
     .container .popup h2 { font-weight:400; margin:0; font-size:1.4em; margin-bottom:20px; }
     .container .popup p { line-height:2; font-size:1.1em; }
     .container .popup ul li { list-style:inside; margin-bottom:10px; line-height:1.7; font-size:1.1em; }
 
-.container #popup3 { height:65%; }
+.container #popup3 { height:500px; }
     
 
 /*** footer ***/
@@ -227,7 +227,7 @@ a { display:block; text-decoration:none; }
 /***** Tablet *****/
 @media (min-width:768px) {
     /*** popup ***/
-    .container .popup { height:30%; }
+    .container #popup3 { height:330px; }
 }
 
 
@@ -357,7 +357,7 @@ a { display:block; text-decoration:none; }
     .container #scroll_btn { width:55px; height:55px; bottom:-60px; right:30px; }
 
     /*** popup ***/
-    .container #popup1, .container #popup2, .container #popup3 { width:40%; height:30%; }
+    .container #popup1, .container #popup2, .container #popup3 { width:40%; height:35%; }
 
     /*** footer ***/
     .container footer { padding:50px 0; box-sizing:border-box; font-size:0.9em; }
