@@ -14,9 +14,6 @@
 ### production period
 - 2020.09.16 - 2020.09.28
 
-### lastest updates
-- 2020.09.29: 제품 상세 페이지의 모바일 화면에 뜨는 팝업창 세로 길이 
-
 ### degree of participation
 - 100% (Design, Publishing, etc)
 
