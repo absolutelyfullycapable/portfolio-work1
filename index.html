@@ -32,12 +32,14 @@
         <link rel="stylesheet" href="css/font.css">
         <!-- font-family:'AntroVectra'; font-family:'TamoroScriptPersonalUseOnly'; font-family:'ZapfHumanistRoman'; -->
         <link rel="stylesheet" href="common/swiper-bundle.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="css/index.css">
 
         <!-- script 연결 -->
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.js"></script>
         <script src="common/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="js/index.js"></script>
     </head>
 
@@ -163,7 +165,7 @@
 
                 <!-- about -->
                 <section id="about">
-                    <div class="about_1">
+                    <div class="about_1" data-aos="fade-right" data-aos-duration="500">
                         <div class="txt">
                             <p>01</p>
                             <h2>Moisturize and<br>improve your skin</h2>
@@ -171,7 +173,7 @@
                         </div>
                         <div class="img"></div>
                     </div> <!-- about 1 -->
-                    <div class="about_2">
+                    <div class="about_2" data-aos="fade-left" data-aos-duration="500">
                         <div class="txt">
                             <p>02</p>
                             <h2>Skin purification<br>and prevent aging</h2>
@@ -179,7 +181,7 @@
                         </div>
                         <div class="img"></div>
                     </div> <!-- about 2 -->
-                    <div class="about_3">
+                    <div class="about_3" data-aos="fade-right" data-aos-duration="500">
                         <div class="txt">
                             <p>03</p>
                             <h2>Mild ingredients<br>for skin</h2>
@@ -268,5 +270,9 @@
             <!-- scroll button -->
             <div id="scroll_btn"></div>
         </div>
+
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
