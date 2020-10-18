@@ -66,7 +66,7 @@ a { display:block; text-decoration:none; }
 
 
 /*** banner ***/
-.container #banner { width:100%; height:350px; display:flex; align-items:center; background:url(../images/subHeader.jpg) no-repeat 45% 70%; background-size:1300px; position:relative; }
+.container #banner { width:100%; height:350px; display:flex; align-items:center; background:url(../images/sub_header.jpg) no-repeat 45% 70%; background-size:1300px; position:relative; }
     .container #banner .txt { width:100%; position:absolute; top:47%; }
         .container #banner .txt h2, .container #banner .txt p { text-align:center; color:#3a3123; }
         .container #banner .txt h2 { margin:10px 0; font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-size:2em; font-weight:normal; }
@@ -78,7 +78,7 @@ a { display:block; text-decoration:none; }
     /** select box **/
     .container #main form { width:100%; display:flex; justify-content:space-between; align-items:center; padding:50px 25px; box-sizing:border-box; }
         .container #main form div { width:120px; }
-        .container #main form div select { width:100%; outline:none; border:none; font-size:0.9em; font-weight:400; color:#3a3123; -webkit-appearance:none; -moz-appearance:none; appearance:none; background:transparent url(../images/selectDown.svg) no-repeat 95% 50%; background-size:12px; padding:10px 0; box-sizing:border-box; }
+        .container #main form div select { width:100%; outline:none; border:none; font-size:0.9em; font-weight:400; color:#3a3123; -webkit-appearance:none; -moz-appearance:none; appearance:none; background:transparent url(../images/select_down.svg) no-repeat 95% 50%; background-size:12px; padding:10px 0; box-sizing:border-box; }
         .container #main form div select::-ms-expand { display:none; }
         .container #main form .PC_select { display:none; }
 
@@ -126,7 +126,7 @@ a { display:block; text-decoration:none; }
 
 
 /*** scroll top ***/
-.container #scroll_btn { width:45px; height:45px; background:#ceb8a1 url(../images/scrollup.svg) no-repeat 50% 50%; background-size:18px; border-radius:50%; position:fixed; bottom:-45px; right:15px; z-index:9; box-shadow:5px 5px 10px rgba(0, 0, 0, 0.1); cursor:pointer; }
+.container #scroll_btn { width:45px; height:45px; background:#ceb8a1 url(../images/scroll_up.svg) no-repeat 50% 50%; background-size:18px; border-radius:50%; position:fixed; bottom:-45px; right:15px; z-index:9; box-shadow:5px 5px 10px rgba(0, 0, 0, 0.1); cursor:pointer; }
 
 
 
@@ -186,7 +186,7 @@ a { display:block; text-decoration:none; }
     /*** main ***/
     /** select box **/
     .container #main form { width:85%; padding:20px 40px; margin:110px auto; border-bottom:1px solid #84786b; }
-        .container #main form div select { padding:10px 15px; box-sizing:border-box; border:1px solid #84786b; background:transparent url(../images/selectDown.svg) no-repeat 80% 50%; background-size:13px; color:#84786b; font-size:1em; }
+        .container #main form div select { padding:10px 15px; box-sizing:border-box; border:1px solid #84786b; background:transparent url(../images/select_down.svg) no-repeat 80% 50%; background-size:13px; color:#84786b; font-size:1em; }
         .container #main form .select_box1 { display:none; }
         .container #main form .select_box2 { width:150px; }
         .container #main form .PC_select { display:block; width:80%; }

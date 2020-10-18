@@ -72,8 +72,8 @@ a { display:block; text-decoration:none; }
 
     /** info **/
     .container #main .info { width:100%; padding-top:90px; box-sizing:border-box; }
-        .container #main .info .daily_set1 { height:400px; background:url(../images/dailySet1.png) no-repeat 50% 40%; background-size:300px; padding:0 45px; box-sizing:border-box; }
-        .container #main .info .daily_set2 { height:400px; background:url(../images/dailySet2.png) no-repeat 50% 20%; background-size:330px; padding:0 45px; box-sizing:border-box; }
+        .container #main .info .daily_set1 { height:400px; background:url(../images/daily_set1.png) no-repeat 50% 40%; background-size:300px; padding:0 45px; box-sizing:border-box; }
+        .container #main .info .daily_set2 { height:400px; background:url(../images/daily_set2.png) no-repeat 50% 20%; background-size:330px; padding:0 45px; box-sizing:border-box; }
         .container #main .info .swiper-pagination { padding-top:30px; }
 
     /** info txt **/
@@ -102,8 +102,8 @@ a { display:block; text-decoration:none; }
     .container #main .more_info { width:100%; }
         
         /* image section */
-        .container #main .more_info .img1 { width:100%; height:55vh; background:url(../images/productDetail1.jpg) no-repeat 50% 90%; background-size:cover; }
-        .container #main .more_info .img2 { width:100%; height:57vh; background:url(../images/productDetail2.png) no-repeat 50% 60%; background-size:cover; }
+        .container #main .more_info .img1 { width:100%; height:55vh; background:url(../images/product_detail1.jpg) no-repeat 50% 90%; background-size:cover; }
+        .container #main .more_info .img2 { width:100%; height:57vh; background:url(../images/product_detail2.png) no-repeat 50% 60%; background-size:cover; }
 
 
 /*** sub main ***/ 
@@ -221,7 +221,7 @@ a { display:block; text-decoration:none; }
 
 
 /*** scroll top ***/
-.container #scroll_btn { width:45px; height:45px; background:#ceb8a1 url(../images/scrollup.svg) no-repeat 50% 50%; background-size:18px; border-radius:50%; position:fixed; bottom:-45px; right:15px; z-index:1; box-shadow:5px 5px 10px rgba(0, 0, 0, 0.1); cursor:pointer; }
+.container #scroll_btn { width:45px; height:45px; background:#ceb8a1 url(../images/scroll_up.svg) no-repeat 50% 50%; background-size:18px; border-radius:50%; position:fixed; bottom:-45px; right:15px; z-index:1; box-shadow:5px 5px 10px rgba(0, 0, 0, 0.1); cursor:pointer; }
 
 
 /***** Tablet *****/
@@ -284,8 +284,8 @@ a { display:block; text-decoration:none; }
 
         /** info **/
         .container #main .info { width:55%; height:100vh; position:absolute; top:0; left:0; }
-            .container #main .info .daily_set1 { width:100%; height:100%; background:url(../images/dailySet1.png) no-repeat 70% 40%; background-size:730px; padding:0 45px; box-sizing:border-box; }
-            .container #main .info .daily_set2 { width:100%; height:100%; background:url(../images/dailySet2.png) no-repeat 70% 20%; background-size:730px; padding:0 45px; box-sizing:border-box; }
+            .container #main .info .daily_set1 { width:100%; height:100%; background:url(../images/daily_set1.png) no-repeat 70% 40%; background-size:730px; padding:0 45px; box-sizing:border-box; }
+            .container #main .info .daily_set2 { width:100%; height:100%; background:url(../images/daily_set2.png) no-repeat 70% 20%; background-size:730px; padding:0 45px; box-sizing:border-box; }
             .container #main .info .swiper-pagination { padding:0 0 30px 55px; }
 
         /** info txt **/
@@ -318,8 +318,8 @@ a { display:block; text-decoration:none; }
         .container #main .more_info { width:55%; margin-top:100vh; }
             
             /* image section */
-            .container #main .more_info .img1 { width:100%; height:110vh; background:url(../images/productDetail1.jpg) no-repeat 50% 90%; background-size:cover; }
-            .container #main .more_info .img2 { width:100%; height:115vh; background:url(../images/productDetail2.png) no-repeat 50% 60%; background-size:cover; }
+            .container #main .more_info .img1 { width:100%; height:110vh; background:url(../images/product_detail1.jpg) no-repeat 50% 90%; background-size:cover; }
+            .container #main .more_info .img2 { width:100%; height:115vh; background:url(../images/product_detail2.png) no-repeat 50% 60%; background-size:cover; }
 
     
     /*** sub main ***/
