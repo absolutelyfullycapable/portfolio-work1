@@ -237,7 +237,7 @@ a { display:block; text-decoration:none; }
 
 
 /***** PC *****/
-@media (min-width:1440px) {
+@media (min-width:1280px) {
     /*** mobile header ***/
     .container header { display:none; }
 
