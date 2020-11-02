@@ -7,9 +7,9 @@
 - 비상업적 용도로 만들어진 포트폴리오용 사이트입니다.
 
 ### available pages
-- **웹사이트 첫 페이지**
-- **제품 목록 페이지** - 헤더 및 내비게이션 내부 제품 관련 카테고리 클릭 시 제품 타이틀과 무관하게 전부 전체 목록 페이지로 이동합니다.
-- **제품 상세 페이지** - 제품 클릭 시 제품과 무관하게 전부 '데일리 세트 (Daily Set)' 상세 페이지로 이동합니다.
+- [웹사이트 첫 페이지](https://absolutelyfullycapable.github.io/the-ordinary)
+- [제품 목록 페이지](https://absolutelyfullycapable.github.io/the-ordinary/product.html) - 헤더 및 내비게이션 내부 제품 관련 카테고리 클릭 시 제품 타이틀과 무관하게 전부 전체 목록 페이지로 이동합니다.
+- [제품 상세 페이지](https://absolutelyfullycapable.github.io/the-ordinary/detail.html) - 제품 클릭 시 제품과 무관하게 전부 '데일리 세트 (Daily Set)' 상세 페이지로 이동합니다.
 
 ### production period
 - 2020.09.16 - 2020.09.28
