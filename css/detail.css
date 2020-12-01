@@ -86,7 +86,7 @@ a { display:block; text-decoration:none; }
         .container #main .info_txt > ul > li:first-child { font-size:1.2em; letter-spacing:0; position:relative; color:#3a3123; }
             .container #main .info_txt > ul > li:first-child h2 { font-weight:400; margin:0; position:relative; z-index:2; }
             .container #main .info_txt > ul > li:first-child span { font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; }
-            .container #main .info_txt > ul > li:first-child .discount { width:50px; height:50px; border-radius:50%; background-color:#d39d67; font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-size:1.2em; display:flex; justify-content:center; align-items:center; color:#fff; position:absolute; top:-60%; left:250px; z-index:1; }
+            .container #main .info_txt > ul > li:first-child .discount { width:50px; height:50px; border-radius:50%; background-color:#d39d67; font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-size:1.2em; display:flex; justify-content:center; align-items:center; color:#fff; position:absolute; top:-80%; left:250px; z-index:1; }
         
         .container #main .info_txt > ul > li:nth-child(2) { padding:5px 0 40px 2px; box-sizing:border-box; font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-size:1.3em; border-bottom:1px solid #3a3123;  }
             .container #main .info_txt > ul > li:nth-child(2) em { font-style:normal; text-decoration:line-through; color:#939393; }
@@ -297,7 +297,7 @@ a { display:block; text-decoration:none; }
         .container #main .info_txt.fix { height:100vh; position:absolute; bottom:0; right:0; height:100vh; }
 
             .container #main .info_txt > ul > li:first-child { font-size:1.7em; }
-            .container #main .info_txt > ul > li:first-child .discount { width:75px; height:75px; left:350px; }
+            .container #main .info_txt > ul > li:first-child .discount { width:75px; height:75px; top:-90%; left:350px; }
 
             .container #main .info_txt > ul > li:nth-child(2) { padding:10px 0 40px 4px; font-size:1.6em; }
 
