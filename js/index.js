@@ -26,13 +26,14 @@ $(function () {
             $('header h1').addClass('active');
             $('header .search').addClass('active');
             $('nav').animate({ left: '0%' }, 1000, 'easeOutCubic').addClass('show');
+            $('html').css('overflow', 'hidden');
         } else {
             wrapperMenu.classList.remove('open');
             $('nav').animate({ left: '-100%' }, 1000, 'easeOutCubic').removeClass('show');
             $('header').removeClass('active');
             $('header h1').removeClass('active');
             $('header .search').removeClass('active');
-            
+            $('html').css('overflow', 'initial');
         }
     })
 

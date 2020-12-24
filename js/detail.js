@@ -17,24 +17,25 @@ $(function() {
    // 모바일 화면에서 햄버거 메뉴 클릭 시 내비게이션이 나타나는 애니메이션
    var wrapperMenu = document.querySelector('.wrapper-menu');
 
-   wrapperMenu.addEventListener('click', function () {
-       const style = $('header').hasClass('active');
+    wrapperMenu.addEventListener('click', function () {
+        const style = $('header').hasClass('active');
 
-       if (style == 0) {
-           wrapperMenu.classList.add('open');
-           $('header').addClass('active');
-           $('header h1').addClass('active');
-           $('header .search').addClass('active');
-           $('nav').animate({ left: '0%' }, 1000, 'easeOutCubic').addClass('show');
-       } else {
-           wrapperMenu.classList.remove('open');
-           $('nav').animate({ left: '-100%' }, 1000, 'easeOutCubic').removeClass('show');
-           $('header').removeClass('active');
-           $('header h1').removeClass('active');
-           $('header .search').removeClass('active');
-           
-       }
-   })
+        if (style == 0) {
+            wrapperMenu.classList.add('open');
+            $('header').addClass('active');
+            $('header h1').addClass('active');
+            $('header .search').addClass('active');
+            $('nav').animate({ left: '0%' }, 1000, 'easeOutCubic').addClass('show');
+            $('html').css('overflow', 'hidden');
+        } else {
+            wrapperMenu.classList.remove('open');
+            $('nav').animate({ left: '-100%' }, 1000, 'easeOutCubic').removeClass('show');
+            $('header').removeClass('active');
+            $('header h1').removeClass('active');
+            $('header .search').removeClass('active');
+            $('html').css('overflow', 'initial');
+        }
+    })
 
    var wd = $(window).width();
     if(wd > 0 && wd < 1440) { // 모바일, 태블릿 화면에서 검색 아이콘 클릭 시 검색창 보임
