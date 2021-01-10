@@ -62,7 +62,7 @@ $(function () {
     });
 
     // 배너 자동 슬라이드
-    let swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.swiper-container', {
         autoplay: {
             delay: 2000,
             disableOnInteraction:false
