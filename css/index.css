@@ -2,7 +2,7 @@
 
 /****** basic ******/
 html, body { height:100%; }
-body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; font-weight:300; letter-spacing:-1px; }
+body { margin:0; font-family:'Noto Sans KR','Apple SD Gothic Neo',sans-serif; font-weight:300; letter-spacing:-1px; width:100%; overflow-x:hidden; }
 ul, li { list-style:none; margin:0; padding:0; }
 a { display:block; text-decoration:none; }
 
@@ -203,7 +203,7 @@ a { display:block; text-decoration:none; }
     
 /*** sub banner ***/
 .container #main #sub_banner { width:100%; height:385px; background:url(../images/sub_banner.jpg) no-repeat 60% 50% fixed; background-size:1600px; position:relative; }
-    .container #main #sub_banner .box { display:block; width:100%; background-color:rgba(252, 247, 240, 0.8); padding:35px 40px; box-sizing:border-box; position:absolute; bottom:30px;  text-decoration:none; }
+    .container #main #sub_banner .box { display:block; width:100%; background-color:rgba(252, 247, 240, 0.8); padding:35px 40px; box-sizing:border-box; position:absolute; bottom:30px; text-decoration:none; }
     .container #main #sub_banner .box h2 { margin:0; font-weight:normal; text-align:center; color:#4a280d; font-family:'ZapfHumanistRoman','Apple SD Gothic Neo', sans-serif; font-size:2em; }
     .container #main #sub_banner .box p { color:#4c4935; margin:20px 0 0; text-align:center; letter-spacing:0; }
 
@@ -330,8 +330,8 @@ a { display:block; text-decoration:none; }
         .container #PC_header .menu2 > li a { display:flex; align-items:center; justify-content:center; width:100%; height:100%; margin:auto 0; }
         .container #PC_header .menu2 > li a img { width:25px; height:25px; }
 
-        .container #PC_header h1 { margin:0; width:188px; height:100%; position:absolute; right:50%; transform:translateX(50%); }
-        .container #PC_header.up h1 { width:170px; }
+        .container #PC_header h1 { margin:0; width:188px; height:100%; transform:translateX(-37.5%); }
+        .container #PC_header.up h1 { width:170px; transform:translateX(-41%); }
         .container #PC_header h1 a { width:100%; height:100%; padding:10px 0; box-sizing:border-box; text-indent:-9999px; background:url(../images/logo.svg) no-repeat 50% 50%; background-size:120px; }
         .container #PC_header.up h1 a { padding:20px 0; background-size:100px; }
 

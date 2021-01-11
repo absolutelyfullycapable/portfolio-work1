@@ -63,6 +63,7 @@ $(function () {
 
     // 배너 자동 슬라이드
     var swiper = new Swiper('.swiper-container', {
+        centeredSlides: true,
         autoplay: {
             delay: 2000,
             disableOnInteraction:false
