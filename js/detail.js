@@ -38,7 +38,7 @@ $(function() {
     })
 
    var wd = $(window).width();
-    if(wd > 0 && wd < 1440) { // 모바일, 태블릿 화면에서 검색 아이콘 클릭 시 검색창 보임
+    if(wd > 0 && wd < 1280) { // 모바일, 태블릿 화면에서 검색 아이콘 클릭 시 검색창 보임
         $('.search').on('click', function () {
             $('#search_box').stop().animate({
                 top: 0
@@ -52,7 +52,7 @@ $(function() {
     
     // 검색창 내 X 버튼 클릭 시 검색창 사라짐
     $('#search_box svg').on('click', function () {    
-        if(wd > 0 && wd < 1400) {
+        if(wd > 0 && wd < 1280) {
             $('#search_box').animate({
                 top: -230
             }, 1000, 'easeOutCubic');
@@ -76,7 +76,7 @@ $(function() {
    // 스크롤 시 숨어 있던 #scroll_btn 버튼 보임
    $(window).scroll(function () {
         var wt = $(window).width();
-        if (wt > 0 && wt < 1440) {
+        if (wt > 0 && wt < 1280) {
             var scrollT = $(window).scrollTop();
             if (scrollT >= 100) {
                 $('#scroll_btn').stop().animate({

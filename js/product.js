@@ -38,7 +38,7 @@ $(function() {
     })
 
     var wd = $(window).width();
-    if(wd > 0 && wd < 1440) { // 모바일, 태블릿 화면에서 검색 아이콘 클릭 시 검색창 보임
+    if(wd > 0 && wd < 1280) { // 모바일, 태블릿 화면에서 검색 아이콘 클릭 시 검색창 보임
         $('.search').on('click', function () {
             $('#search_box').stop().animate({
                 top: 0
@@ -52,7 +52,7 @@ $(function() {
     
     // 검색창 내 X 버튼 클릭 시 검색창 사라짐
     $('#search_box svg').on('click', function () {    
-        if(wd > 0 && wd < 1400) {
+        if(wd > 0 && wd < 1280) {
             $('#search_box').animate({
                 top: -230
             }, 1000, 'easeOutCubic');
@@ -127,7 +127,7 @@ $(function() {
     });
 
     // PC 화면에서 상품 목록 이미지 호버 시 장바구니 아이콘 나타남
-    if(wd >= 1440) {
+    if(wd >= 1280) {
         $('.products .img').hover(function() {
             $(this).children('.products .cart').stop().animate({bottom: 20}, 400, 'easeOutCubic');
         }, function() {
