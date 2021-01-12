@@ -157,7 +157,7 @@ a { display:block; text-decoration:none; }
         .container #PC_header .menu1 > li:first-child { position:relative; }
         .container #PC_header .menu1 ul { position:absolute; top:85px; width:120px; list-style:none; background-color:#fff; box-shadow:0 0 10px rgba(0, 0, 0, 0.1);  }
         .container #PC_header .menu1 ul li { transition:0.2s; }
-        .container #PC_header .menu1 ul li:hover { background-color:#d39d671e; }
+        .container #PC_header .menu1 ul li:hover { background-color:rgba(211, 157, 103, 0.15); }
         .container #PC_header.up .menu1 ul { background-color:rgba(255, 255, 255, 0.9); box-shadow:none; }
 
         .container #PC_header .menu2 > li { text-align:center; width:120px; }

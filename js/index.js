@@ -72,26 +72,18 @@ $(function () {
         speed: 2000
     });
 
-    // 스크롤 시 #PC_header 애니메이션
+    // 스크롤 시 #PC_header 애니메이션, 숨어 있던 #scroll_btn 보임
     $(window).on('scroll', function () {
         var scroll = $(this).scrollTop();
         if (scroll >= 100) {
             $('.container #PC_header').addClass('up');
             $('.container #search_box').addClass('act');
-        } else {
-            $('.container #PC_header').removeClass('up');
-            $('.container #search_box').removeClass('act');
-        }
-    });
-
-    // 스크롤 시 숨어 있던 #scroll_btn 보임
-    $(window).scroll(function () {
-        var scrollT = $(this).scrollTop();
-        if (scrollT >= 100) {
             $('#scroll_btn').stop().animate({
                 bottom: 25
             }, 500);
         } else {
+            $('.container #PC_header').removeClass('up');
+            $('.container #search_box').removeClass('act');
             $('#scroll_btn').stop().animate({
                 bottom: -100
             }, 500);
