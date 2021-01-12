@@ -191,13 +191,13 @@ $(function() {
 
     // PC 화면에서 .info_txt 제어
     $(window).on('scroll', function() {
-        const scr = $(window).scrollTop();
-        const ht = $('.more_info .img2').offset().top;
+        var scr = $(window).scrollTop(),
+              ht = $('.more_info .img2').offset().top;
         
         if(scr >= ht) {
-            $('.info_txt').addClass('fix');
+            $('.info_txt').addClass('no_fixed');
         } else {
-            $('.info_txt').removeClass('fix');
+            $('.info_txt').removeClass('no_fixed');
         }
     });
 });

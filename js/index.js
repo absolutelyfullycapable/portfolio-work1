@@ -38,7 +38,7 @@ $(function () {
     })
 
     var wd = $(window).width();
-    if(wd > 0 && wd < 1440) { // 모바일, 태블릿 화면에서 검색 아이콘 클릭 시 검색창 보임
+    if(wd > 0 && wd < 1280) { // 모바일, 태블릿 화면에서 검색 아이콘 클릭 시 검색창 보임
         $('.search').on('click', function () {
             $('#search_box').stop().animate({
                 top: 0
@@ -52,7 +52,7 @@ $(function () {
     
     // 검색창 내 X 버튼 클릭 시 검색창 사라짐
     $('#search_box svg').on('click', function () {    
-        if(wd > 0 && wd < 1400) {
+        if(wd > 0 && wd < 1280) {
             $('#search_box').animate({
                 top: -230
             }, 1000, 'easeOutCubic');
@@ -115,7 +115,7 @@ $(function () {
     });
 
     // PC를 제외한 디바이스에서만 best seller 부분 swiper 플러그인
-    if (wd > 0 && wd < 1440) {
+    if (wd > 0 && wd < 1280) {
         $('#best_seller').addClass('BS-container');
         $('#best_seller .products').addClass('swiper-wrapper');
         $('#best_seller .product1').addClass('swiper-slide');
@@ -144,7 +144,7 @@ $(function () {
     })
 
     // PC를 제외한 디바이스에서만 new arrivals 부분 swiper 플러그인
-    if (wd > 0 && wd < 1440) {
+    if (wd > 0 && wd < 1280) {
         $('#new_arrivals').addClass('NA-container');
         $('#new_arrivals .products').addClass('swiper-wrapper');
         $('#new_arrivals .product1').addClass('swiper-slide');

@@ -310,23 +310,23 @@ a { display:block; text-decoration:none; }
         .container #PC_header > ul { height:70px; display:flex; color:#2d2d2d; }
         .container #PC_header.up > ul { height:70px; }
         .container #PC_header > ul > li { height:70px; line-height:70px; cursor:pointer; transition:0.2s; }
-        .container #PC_header.up > ul > li { text-align:center; width:120px; height:70px; line-height:70px; }
+        .container #PC_header.up > ul > li { text-align:center; width:6.25vw; height:70px; line-height:70px; }
 
-        .container #PC_header .menu1 > li { text-align:center; width:120px; }
+        .container #PC_header .menu1 > li { text-align:center; width:6.25vw; }
         .container #PC_header .menu1 > li:first-child:hover { color:#d39d67; }
         .container #PC_header .menu1 > li ul li a { color:#2d2d2d; }
         .container #PC_header .menu1 > li:hover ul li a { color:#2d2d2d; }
 
         .container #PC_header .menu1 > li a { color:inherit; }
         .container #PC_header .menu1 > li:first-child { position:relative; }
-        .container #PC_header .menu1 ul { position:absolute; top:85px; width:120px; list-style:none; background-color:#fff; box-shadow:0 0 10px rgba(0, 0, 0, 0.1);  }
+        .container #PC_header .menu1 ul { position:absolute; top:85px; width:6.25vw; list-style:none; background-color:#fff; box-shadow:0 0 10px rgba(0, 0, 0, 0.1);  }
         .container #PC_header .menu1 ul li { transition:0.2s; }
         .container #PC_header .menu1 ul li:hover { background-color:rgba(211, 157, 103, 0.15); }
         .container #PC_header.up .menu1 ul { background-color:rgba(255, 255, 255, 0.9); box-shadow:none; }
 
-        .container #PC_header .menu2 > li { text-align:center; width:120px; }
-        .container #PC_header .menu2 > li:last-child { width:100px; height:100%; display:flex; }
-        .container #PC_header.up .menu2 > li:last-child { width:100px; height:100%; display:flex; }
+        .container #PC_header .menu2 > li { text-align:center; width:6.25vw; }
+        .container #PC_header .menu2 > li:last-child { width:5.208vw; height:100%; display:flex; }
+        .container #PC_header.up .menu2 > li:last-child { width:5.208vw; height:100%; display:flex; }
         .container #PC_header .menu2 > li a { display:flex; align-items:center; justify-content:center; width:100%; height:100%; margin:auto 0; }
         .container #PC_header .menu2 > li a img { width:25px; height:25px; }
 
